@@ -10,23 +10,23 @@ import java.util.Date;
 public class Movimiento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "MovimientoID")
+    @Column(name = "id")
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "fecha", nullable = false)
     @Temporal(TemporalType.DATE)
     private Date fecha;
 
-    @Column(nullable = false)
+    @Column(name = "tipoMovimiento", nullable = false)
     private String tipoMovimiento;
 
-    @Column(nullable = false)
+    @Column(name = "valor", nullable = false)
     private double valor;
 
-    @Column(nullable = false)
+    @Column(name = "saldo", nullable = false)
     private double saldo;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "CuentaID", nullable = false)
+    @JoinColumn(name = "cuenta_id", nullable = false)
     private Cuenta cuenta;
 }

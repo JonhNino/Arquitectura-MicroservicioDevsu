@@ -5,29 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec411312-bd06-45bf-a72e-5325a72af4b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ClienteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BaseDatos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../BaseDatos.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/490af1de1bd5f8af8ddae4fe963c873d1996568f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/490af1de1bd5f8af8ddae4fe963c873d1996568f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f1c68b06f812e8bbb8bd94158cc7106875e1f1b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f1c68b06f812e8bbb8bd94158cc7106875e1f1b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea0ef42afc6740ff5787e5c9666b2e7647935103" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea0ef42afc6740ff5787e5c9666b2e7647935103" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/fff74e8d0e46cbb6e595e9395dd590cb72cb2c5d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/fff74e8d0e46cbb6e595e9395dd590cb72cb2c5d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/16d88d76831606ac91d13ef2c5e4749051fe6d83" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/16d88d76831606ac91d13ef2c5e4749051fe6d83" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cuenta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Movimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Movimiento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/ClienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/CuentaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/MovimientoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/PersonaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/PersonaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/UserCliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/UserCuenta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/UserMovimiento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/UserPersona.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +140,7 @@
       <workItem from="1717820882046" duration="2889000" />
       <workItem from="1717861219671" duration="1340000" />
       <workItem from="1717863551928" duration="600000" />
-      <workItem from="1717867522326" duration="2949000" />
+      <workItem from="1717867522326" duration="4021000" />
     </task>
     <servers />
   </component>

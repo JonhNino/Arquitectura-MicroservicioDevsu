@@ -6,25 +6,26 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "Persona")
 @Data
-public class Persona {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "PersonaID")
-    private Long id;
+public class Persona {@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@Column(name = "id")
+private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "nombre", nullable = false)
     private String nombre;
 
-    @Column(nullable = false, length = 1)
+    @Column(name = "genero", nullable = false, length = 50)
     private String genero;
 
-    @Column(nullable = false)
+    @Column(name = "edad", nullable = false)
     private Integer edad;
 
-    @Column(unique = true, nullable = false)
+    @Column(name = "identificacion", unique = true, nullable = false)
     private String identificacion;
 
+    @Column(name = "direccion")
     private String direccion;
 
+    @Column(name = "telefono")
     private String telefono;
 }

@@ -14,18 +14,22 @@ import java.io.Serializable;
 public class Cuenta implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "CuentaID")
+    @Column(name = "id")
     private Long id;
 
-    @Column(unique = true, nullable = false)
+    @Column(name = "numeroCuenta", unique = true, nullable = false)
     private String numeroCuenta;
 
-    @Column(nullable = false)
+    @Column(name = "tipoCuenta", nullable = false)
     private String tipoCuenta;
 
-    @Column(nullable = false)
+    @Column(name = "saldoInicial", nullable = false)
     private double saldoInicial;
 
-    @Column(nullable = false)
-    private String estado;
+    @Column(name = "estado", nullable = false)
+    private boolean estado;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "cliente_id", nullable = false)
+    private Cliente cliente;
 }

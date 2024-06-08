@@ -9,16 +9,16 @@ import jakarta.persistence.*;
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ClienteID")
+    @Column(name = "id")
     private Long id;
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "PersonaID", nullable = false)
+    @JoinColumn(name = "persona_id", nullable = false)
     private Persona persona;
 
-    @Column(nullable = false)
+    @Column(name = "contrasena", nullable = false)
     private String contrasena;
 
-    @Column(nullable = false)
+    @Column(name = "estado", nullable = false)
     private boolean estado;
 }
