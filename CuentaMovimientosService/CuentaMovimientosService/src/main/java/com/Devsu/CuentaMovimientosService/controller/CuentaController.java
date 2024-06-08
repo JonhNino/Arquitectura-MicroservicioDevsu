@@ -35,6 +35,16 @@ public class CuentaController {
         return cuentaService.saveUser(user);
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<Cuenta> updateUser(@PathVariable Long id, @RequestBody Cuenta user) {
+        try {
+            Cuenta updatedUser = cuentaService.updateUser(id, user);
+            return ResponseEntity.ok(updatedUser);
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
         cuentaService.deleteUser(id);

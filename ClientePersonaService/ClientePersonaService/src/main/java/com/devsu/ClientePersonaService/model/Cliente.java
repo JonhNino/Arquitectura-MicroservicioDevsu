@@ -9,7 +9,7 @@ import jakarta.persistence.*;
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "cliente_id")
     private Long id;
 
     @OneToOne(fetch = FetchType.LAZY)

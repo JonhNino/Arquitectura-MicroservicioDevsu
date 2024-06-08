@@ -34,6 +34,16 @@ public class MovimientoController {
         return movimientoService.saveUser(user);
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<Movimiento> updateUser(@PathVariable Long id, @RequestBody Movimiento user) {
+        try {
+            Movimiento updatedUser = movimientoService.updateUser(id, user);
+            return ResponseEntity.ok(updatedUser);
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
         movimientoService.deleteUser(id);

@@ -36,6 +36,15 @@ public class ClienteController {
         return clienteService.saveUser(user);
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<Cliente> updateUser(@PathVariable Long id, @RequestBody Cliente user) {
+        try {
+            Cliente updatedUser = clienteService.updateUser(id, user);
+            return ResponseEntity.ok(updatedUser);
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
         clienteService.deleteUser(id);

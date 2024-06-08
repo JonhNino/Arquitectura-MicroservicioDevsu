@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS persona (
 
 -- Crear la tabla Cliente que hereda de Persona
 CREATE TABLE IF NOT EXISTS cliente (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    cliente_id BIGINT AUTO_INCREMENT PRIMARY KEY,
     persona_id BIGINT NOT NULL,
     contrasena VARCHAR(255) NOT NULL,
     estado BOOLEAN NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS cuenta (
     saldo_inicial DOUBLE NOT NULL,
     estado BOOLEAN NOT NULL,
     cliente_id BIGINT NOT NULL,
-    FOREIGN KEY (cliente_id) REFERENCES cliente(id)
+    FOREIGN KEY (cliente_id) REFERENCES cliente(cliente_id)
 );
 
 -- Crear la tabla Movimientos
@@ -50,7 +50,7 @@ INSERT INTO persona (nombre, genero, edad, identificacion, direccion, telefono) 
 ('Juan Osorio', 'Masculino', 35, '1122334455', '13 junio y Equinoccial', '098874587');
 
 -- Insertar datos iniciales en Cliente
-INSERT INTO cliente (persona_id, id, contrasena, estado) VALUES 
+INSERT INTO cliente (persona_id, cliente_id, contrasena, estado) VALUES 
 ((SELECT id FROM persona WHERE identificacion='1234567890'), '1234567890', '1234', TRUE),
 ((SELECT id FROM persona WHERE identificacion='0987654321'), '0987654321', '5678', TRUE),
 ((SELECT id FROM persona WHERE identificacion='1122334455'), '1122334455', '1245', TRUE);
@@ -64,13 +64,14 @@ INSERT INTO cuenta (numero_cuenta, tipo_cuenta, saldo_inicial, estado, cliente_i
 (210987, 'Corriente', 500.00, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1234567890')));
 
 
-
+SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='478758'; 
 -- Insertar datos en Movimientos
 INSERT INTO movimientos (fecha, tipo_movimiento, valor, saldo, cuenta_id) VALUES 
-('2022-02-10', 'Retiro', -575, 1425, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='478758')),
-('2022-02-08', 'Depósito', 600, 700, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='225487')),
-('2022-02-08', 'Depósito', 150, 150, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='495878')),
-('2022-02-08', 'Retiro', -540, 0, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='496825'));
+('2022-02-10', 'Retiro', -575, 1425, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='123456')),
+('2022-02-08', 'Depósito', 600, 700, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='210987')),
+('2022-02-08', 'Depósito', 150, 150, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='654321')),
+('2022-02-08', 'Retiro', -540, 0, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='789012'));
+
 
 DESCRIBE cuenta;
 
