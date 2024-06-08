@@ -1,19 +1,20 @@
 package com.devsu.ClientePersonaService.model;
 
 import lombok.Data;
-
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "movimientos")
+@Table(name = "Movimientos")
 @Data
 public class Movimiento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "MovimientoID")
     private Long id;
 
     @Column(nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date fecha;
 
     @Column(nullable = false)
@@ -26,6 +27,6 @@ public class Movimiento {
     private double saldo;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "cuenta_id", nullable = false)
+    @JoinColumn(name = "CuentaID", nullable = false)
     private Cuenta cuenta;
 }

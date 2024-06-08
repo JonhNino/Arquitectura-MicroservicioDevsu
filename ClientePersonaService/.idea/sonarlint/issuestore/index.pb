@@ -29,3 +29,15 @@ _ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/
 bClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/UserMovimiento.java,c\c\ccc145db892922edc5ff5b1b8ef89550e0fe8e7e
 è
 _ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/UserPersona.java,b\2\b21f66ed725763b21d49b679e404271360fd6e0a
+â
+YClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Movimiento.java,d\a\daed8dfdb2f75d2bde7d00372ab2fd2c27b6d44b
+Ö
+UClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cuenta.java,1\6\16d88d76831606ac91d13ef2c5e4749051fe6d83
+î
+dClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/CuentaController.java,5\5\5575f88032f7a52513274cc9dd48ee60fe4283aa
+é
+^ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/CuentaService.java,4\b\4babf53657dc2aa24d147b46ad45519bf21f8e11
+ï
+eClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ClienteController.java,9\8\98912cbe8e1e0a541e9a14a5bcfb441f82355f4a
+è
+_ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ClienteService.java,9\c\9c241c478426474634cef2274d7a6049921511fb

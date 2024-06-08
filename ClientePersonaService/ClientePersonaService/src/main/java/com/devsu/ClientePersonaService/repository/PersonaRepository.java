@@ -1,10 +1,10 @@
-/*package com.devsu.ClientePersonaService.repository;
+package com.devsu.ClientePersonaService.repository;
 
 
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
+import com.devsu.ClientePersonaService.model.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface PersonaRepository  extends JpaRepository<SecurityProperties.User, Long> {
+@Repository
+public interface PersonaRepository extends JpaRepository<Persona, Long> {
 }
-
- */

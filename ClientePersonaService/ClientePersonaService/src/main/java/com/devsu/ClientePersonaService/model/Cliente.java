@@ -1,23 +1,20 @@
 package com.devsu.ClientePersonaService.model;
 
 import lombok.Data;
-
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
-@Table(name = "cliente")
+@Table(name = "Cliente")
 @Data
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ClienteID")
     private Long id;
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "persona_id", nullable = false)
+    @JoinColumn(name = "PersonaID", nullable = false)
     private Persona persona;
-
-    @Column(unique = true, nullable = false)
-    private String clienteId;
 
     @Column(nullable = false)
     private String contrasena;
@@ -25,4 +22,3 @@ public class Cliente {
     @Column(nullable = false)
     private boolean estado;
 }
-

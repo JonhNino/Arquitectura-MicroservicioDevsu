@@ -41,7 +41,7 @@ public class DummyService {
 
         Cuenta cuenta = new Cuenta();
         cuenta.setNumeroCuenta("2324da32");
-        cuenta.setCliente(cliente);
+        //cuenta.setCliente(cliente);
 
         Movimiento movimiento = new Movimiento();
         movimiento.setTipoMovimiento("Dinero");

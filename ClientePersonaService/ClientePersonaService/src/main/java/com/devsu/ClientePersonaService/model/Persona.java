@@ -1,23 +1,24 @@
 package com.devsu.ClientePersonaService.model;
 
-import com.devsu.ClientePersonaService.repository.UserPersona;
 import lombok.Data;
-
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
-@Table(name = "persona")
+@Table(name = "Persona")
 @Data
-public class Persona implements UserPersona {
+public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "PersonaID")
     private Long id;
 
     @Column(nullable = false)
     private String nombre;
 
+    @Column(nullable = false, length = 1)
     private String genero;
 
+    @Column(nullable = false)
     private Integer edad;
 
     @Column(unique = true, nullable = false)

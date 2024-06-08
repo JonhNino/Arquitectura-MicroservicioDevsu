@@ -3,18 +3,18 @@ package com.devsu.ClientePersonaService.model;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "cuenta")
+@Table(name = "Cuenta")
 @Getter
-@ToString
 @Setter
-public class Cuenta  implements Serializable {
+@ToString
+public class Cuenta implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "CuentaID")
     private Long id;
 
     @Column(unique = true, nullable = false)
@@ -27,10 +27,5 @@ public class Cuenta  implements Serializable {
     private double saldoInicial;
 
     @Column(nullable = false)
-    private boolean estado;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "cliente_id", nullable = false)
-    private Cliente cliente;
-
+    private String estado;
 }
