@@ -7,8 +7,6 @@ M
 SClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/Data.java,0\7\07f489a401879226f4e040239b668d107f52385f
 …
 UClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/Publisher.java,2\e\2e22200a17a82fba41a5d5e0ffd33e5e9fd5c697
-ˆ
-XClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/DummyService.java,5\b\5b520be57181a21799f4d1ed6c4e197e31d4403b
 †
 VClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cliente.java,1\8\18bc8f8b6c25d849e75a280ec3160317b63eecfb
 ™

@@ -27,3 +27,7 @@ Rcommon-service/src/main/java/com/example/common_service/repository/UserCuenta.j
 Scommon-service/src/main/java/com/example/common_service/repository/UserCliente.java,9\7\970d7aa2f5fbe91d999fc4d622793ac38ee3926c
 †
 Vcommon-service/src/main/java/com/example/common_service/repository/UserMovimiento.java,c\3\c3ce34337513e2e112f0f96a2bc14646127d3383
+ˆ
+Xcommon-service/src/main/java/com/example/common_service/controller/CuentaController.java,1\8\18c5a811ba77f513e80350cdc9041f14efdbaf83
+‚
+Rcommon-service/src/main/java/com/example/common_service/service/CuentaService.java,5\2\52b76f2c28660066a2349d950292f68f24cd47cd

@@ -1,19 +1,18 @@
 package com.Devsu.CuentaMovimientosService.model;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name = "cuenta")
 @Getter
-@ToString
 @Setter
-public class Cuenta  implements Serializable {
+@ToString
+public class Cuenta implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -33,5 +32,4 @@ public class Cuenta  implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cliente_id", nullable = false)
     private Cliente cliente;
-
 }

@@ -1,9 +1,10 @@
-package com.example.common_service.repository;
+package com.Devsu.CuentaMovimientosService.repository;
 
-import com.example.common_service.model.Movimiento;
+import com.Devsu.CuentaMovimientosService.model.Movimiento;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface MovimientoRepository extends JpaRepository<Movimiento, Long> {
 }
+

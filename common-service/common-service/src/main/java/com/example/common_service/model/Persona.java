@@ -1,6 +1,6 @@
 package com.example.common_service.model;
 
-import com.example.common_service.repository.UserPersona;
+
 import lombok.Data;
 
 import javax.persistence.*;
@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "persona")
 @Data
-public class Persona implements UserPersona {
+public class Persona  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

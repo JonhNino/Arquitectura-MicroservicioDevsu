@@ -1,7 +1,6 @@
 package com.Devsu.CuentaMovimientosService.mq;
 
 import com.Devsu.CuentaMovimientosService.model.Cliente;
-import com.Devsu.CuentaMovimientosService.model.Cuenta;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.messaging.handler.annotation.Payload;
