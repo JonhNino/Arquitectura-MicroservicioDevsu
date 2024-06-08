@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec411312-bd06-45bf-a72e-5325a72af4b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07f489a401879226f4e040239b668d107f52385f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e22200a17a82fba41a5d5e0ffd33e5e9fd5c697" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/490af1de1bd5f8af8ddae4fe963c873d1996568f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b520be57181a21799f4d1ed6c4e197e31d4403b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/7/07f489a401879226f4e040239b668d107f52385f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2e22200a17a82fba41a5d5e0ffd33e5e9fd5c697" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/9/490af1de1bd5f8af8ddae4fe963c873d1996568f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/b/5b520be57181a21799f4d1ed6c4e197e31d4403b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/ClientePersonaServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Movimiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/PublisherConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/QueueConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/CuentaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/MovimientoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/PersonaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/UserCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/UserCuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/UserMovimiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/repository/UserPersona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/JetClient/state.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/common-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/model/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/model/Cuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/model/Movimiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/model/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/repository/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/repository/CuentaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/repository/MovimientoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/repository/PersonaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/repository/UserCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/repository/UserCuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/repository/UserMovimiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../common-service/common-service/src/main/java/com/example/common_service/repository/UserPersona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClientePersonaService.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../ClientePersonaService.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ClientePersonaService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ClientePersonaService.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JetClient/state.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JetClient/state.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e2410b5577e5f85d3fb3b08f87355378dce8952" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e30b2a9cc695d8f2271c33a216523459023fb07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b4c47e989862c68a469410407ce61e6a9c0d0e2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43e32b0ceafe8c3fa524fcd0a3b0e0a7232e65ad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/6836e2ad12fa399607de83b2327c5c3e206d766a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/698342dbb7c096de1a8f21de3c20a49abc6b5e13" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/698342dbb7c096de1a8f21de3c20a49abc6b5e13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa0bd972cbfe1faa195ac142be30acd4d9839060" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b225d1fe0c48f059dda556969acd9ee332175845" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c90335fa926a5176a1a57518a928c75017593905" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e332318f812dfba7850e3d05dc79f7317dde8946" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e892d60e847143d758160d44866ed27929f9d8c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2e2410b5577e5f85d3fb3b08f87355378dce8952" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2e30b2a9cc695d8f2271c33a216523459023fb07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/b/3b4c47e989862c68a469410407ce61e6a9c0d0e2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/43e32b0ceafe8c3fa524fcd0a3b0e0a7232e65ad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/8/6836e2ad12fa399607de83b2327c5c3e206d766a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/a/aa0bd972cbfe1faa195ac142be30acd4d9839060" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/2/b225d1fe0c48f059dda556969acd9ee332175845" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/9/c90335fa926a5176a1a57518a928c75017593905" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/3/e332318f812dfba7850e3d05dc79f7317dde8946" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/8/e892d60e847143d758160d44866ed27929f9d8c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/Devsu/ClientePersonaService/ClientePersonaServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/Devsu/ClientePersonaService/dummy/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/Devsu/ClientePersonaService/dummy/DummyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/Devsu/ClientePersonaService/dummy/DummyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/Devsu/ClientePersonaService/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/Devsu/ClientePersonaService/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/Devsu/ClientePersonaService/mq/Publisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/Devsu/ClientePersonaService/mq/PublisherConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/Devsu/ClientePersonaService/mq/QueueConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/Devsu/ClientePersonaService/mq/RabbitConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/test/java/com/Devsu/ClientePersonaService/ClientePersonaServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/7/a/7aca520391b6528c7d9c3c8acb0d0c7506bdf1ff" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/7/a/7aca520391b6528c7d9c3c8acb0d0c7506bdf1ff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/d/e/de3351f5b20822b65c72519f5f64f02966409f5c" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/d/e/de3351f5b20822b65c72519f5f64f02966409f5c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/f/9/f9243e4489bb523c04f7f2a62994d626a8fd71d4" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/f/9/f9243e4489bb523c04f7f2a62994d626a8fd71d4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/RabbitConfig.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\jonhn\.m2\repository" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2ha8ZB52UEW5LijAo5borXihAZB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.ClientePersonaService [clean].executor": "Run",
+    "Maven.ClientePersonaService [install].executor": "Run",
+    "Maven.cliente.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ClientePersonaServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jonhn/OneDrive/Escritorio/Devsu/ClientePersonaService/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonhn\OneDrive\Escritorio\Devsu\ClientePersonaService\ClientePersonaService\src\main\java\com\devsu\ClientePersonaService" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ClientePersonaServiceApplication">
+    <configuration name="cliente" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/ClientePersonaService" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="ClientePersonaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ClientePersonaService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.devsu.ClientePersonaService.ClientePersonaServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.cliente" />
+      <item itemvalue="Spring Boot.ClientePersonaServiceApplication" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec411312-bd06-45bf-a72e-5325a72af4b7" name="Changes" comment="" />
+      <created>1717820880909</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717820880909</updated>
+      <workItem from="1717820882046" duration="2889000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

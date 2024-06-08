@@ -17,11 +17,19 @@ public class RabbitConfig {
     public Jackson2JsonMessageConverter consumerJackson2MessageConverter() {
         Jackson2JsonMessageConverter converter = new Jackson2JsonMessageConverter();
         DefaultJackson2JavaTypeMapper typeMapper = new DefaultJackson2JavaTypeMapper();
-        typeMapper.setIdClassMapping(Map.of("com.Devsu.ClientePersonaService.dummy.Data", com.Devsu.CuentaMovimientosService.dummy.Data.class));
+        typeMapper.setIdClassMapping(Map.of(
+                "com.Devsu.CuentaMovimientosService.model.Cliente", com.Devsu.CuentaMovimientosService.model.Cliente.class
+             //   "com.Devsu.ClientePersonaService.model.Cliente", com.Devsu.ClientePersonaService.model.Cliente.class
+        ));
         typeMapper.setTypePrecedence(Jackson2JavaTypeMapper.TypePrecedence.TYPE_ID);
+
+        // Agrega ambos paquetes a la lista de paquetes de confianza
+        typeMapper.setTrustedPackages("com.Devsu.CuentaMovimientosService.model", "com.Devsu.ClientePersonaService.model");
+
         converter.setJavaTypeMapper(typeMapper);
         return converter;
     }
+
 
     @Bean
     public SimpleMessageListenerContainer messageListenerContainer(ConnectionFactory connectionFactory,

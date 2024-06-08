@@ -1,12 +1,19 @@
 package com.Devsu.CuentaMovimientosService.model;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "cuenta")
-@Data
-public class Cuenta {
+@Getter
+@ToString
+@Setter
+public class Cuenta  implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,11 +30,8 @@ public class Cuenta {
     @Column(nullable = false)
     private boolean estado;
 
-    // SE necesita validar ya que su comunicacion es asincrona
-    /*
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cliente_id", nullable = false)
     private Cliente cliente;
 
-     */
 }

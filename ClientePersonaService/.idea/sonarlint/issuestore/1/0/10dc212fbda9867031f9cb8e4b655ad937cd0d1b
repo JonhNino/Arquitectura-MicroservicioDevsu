@@ -1,0 +1,4 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñ’¯äúÿÿÿÿ
+‹
+java:S1128"nRemove this unused import 'org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration'.(Ûæ„ƒ8›Âú±ÿ1
