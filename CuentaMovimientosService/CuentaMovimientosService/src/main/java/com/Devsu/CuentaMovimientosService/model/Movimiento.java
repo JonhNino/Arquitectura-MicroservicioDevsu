@@ -3,25 +3,26 @@ package com.Devsu.CuentaMovimientosService.model;
 import lombok.Data;
 import jakarta.persistence.*;
 import java.util.Date;
-
 @Entity
-@Table(name = "movimientos")
+@Table(name = "Movimientos")
 @Data
 public class Movimiento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "fecha", nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date fecha;
 
-    @Column(nullable = false)
+    @Column(name = "tipo_movimiento", nullable = false)
     private String tipoMovimiento;
 
-    @Column(nullable = false)
+    @Column(name = "valor", nullable = false)
     private double valor;
 
-    @Column(nullable = false)
+    @Column(name = "saldo", nullable = false)
     private double saldo;
 
     @ManyToOne(fetch = FetchType.LAZY)

@@ -24,9 +24,9 @@ CREATE TABLE IF NOT EXISTS cliente (
 
 -- Crear la tabla Cuenta
 CREATE TABLE IF NOT EXISTS cuenta (
-    numeroCuenta BIGINT UNIQUE NOT NULL PRIMARY KEY,
-    tipoCuenta VARCHAR(50) NOT NULL,
-    saldoInicial DOUBLE NOT NULL,
+    numero_cuenta BIGINT AUTO_INCREMENT PRIMARY KEY,
+    tipo_cuenta VARCHAR(50) NOT NULL,
+    saldo_inicial DOUBLE NOT NULL,
     estado BOOLEAN NOT NULL,
     cliente_id BIGINT NOT NULL,
     FOREIGN KEY (cliente_id) REFERENCES cliente(id)
@@ -36,11 +36,11 @@ CREATE TABLE IF NOT EXISTS cuenta (
 CREATE TABLE IF NOT EXISTS movimientos (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     fecha DATE NOT NULL,
-    tipoMovimiento VARCHAR(50) NOT NULL,
+    tipo_movimiento VARCHAR(50) NOT NULL,
     valor DOUBLE NOT NULL,
     saldo DOUBLE NOT NULL,
     cuenta_id BIGINT NOT NULL,
-    FOREIGN KEY (cuenta_id) REFERENCES cuenta(numeroCuenta)
+    FOREIGN KEY (cuenta_id) REFERENCES cuenta(numero_cuenta)
 );
 
 -- Insertar datos iniciales en Persona
@@ -56,18 +56,22 @@ INSERT INTO cliente (persona_id, id, contrasena, estado) VALUES
 ((SELECT id FROM persona WHERE identificacion='1122334455'), '1122334455', '1245', TRUE);
 
 -- Insertar datos en Cuenta
-INSERT INTO cuenta (numeroCuenta, tipoCuenta, saldoInicial, estado, cliente_id) VALUES 
-('478758', 'Ahorros', 2000, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1234567890'))),
-('225487', 'Corriente', 100, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='0987654321'))),
-('495878', 'Ahorros', 0, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1122334455'))),
-('496825', 'Ahorros', 540, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='0987654321'))),
-('585545', 'Corriente', 1000, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1234567890')));
+-- Insertar datos en Cuenta
+INSERT INTO cuenta (numero_cuenta, tipo_cuenta, saldo_inicial, estado, cliente_id) VALUES 
+(123456, 'Ahorros', 2500.00, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1234567890'))),
+(654321, 'Corriente', 1500.00, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='0987654321'))),
+(789012, 'Ahorros', 3000.00, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1122334455'))),
+(210987, 'Corriente', 500.00, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1234567890')));
+
+
 
 -- Insertar datos en Movimientos
-INSERT INTO movimientos (fecha, tipoMovimiento, valor, saldo, cuenta_id) VALUES 
-('2022-02-10', 'Retiro', -575, 1425, (SELECT numeroCuenta FROM cuenta WHERE numeroCuenta='478758')),
-('2022-02-08', 'Depósito', 600, 700, (SELECT numeroCuenta FROM cuenta WHERE numeroCuenta='225487')),
-('2022-02-08', 'Depósito', 150, 150, (SELECT numeroCuenta FROM cuenta WHERE numeroCuenta='495878')),
-('2022-02-08', 'Retiro', -540, 0, (SELECT numeroCuenta FROM cuenta WHERE numeroCuenta='496825'));
+INSERT INTO movimientos (fecha, tipo_movimiento, valor, saldo, cuenta_id) VALUES 
+('2022-02-10', 'Retiro', -575, 1425, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='478758')),
+('2022-02-08', 'Depósito', 600, 700, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='225487')),
+('2022-02-08', 'Depósito', 150, 150, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='495878')),
+('2022-02-08', 'Retiro', -540, 0, (SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='496825'));
+
+DESCRIBE cuenta;
 
 

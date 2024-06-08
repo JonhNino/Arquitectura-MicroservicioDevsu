@@ -1,4 +1,4 @@
 
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á¿­ñ8§€–ªÿ1
 F
-java:S1948"")Make "cliente" transient or serializable.(Ó…ß®8Úº¦Åÿ1
+java:S1948 ")Make "cliente" transient or serializable.(Ó…ß®8åÆîÉÿ1

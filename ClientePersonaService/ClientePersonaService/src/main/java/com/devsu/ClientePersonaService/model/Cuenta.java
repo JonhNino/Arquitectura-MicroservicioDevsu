@@ -1,24 +1,23 @@
 package com.devsu.ClientePersonaService.model;
 
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
 import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "Cuenta")
+@Table(name = "cuenta")
 @Getter
 @Setter
 @ToString
 public class Cuenta implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "numeroCuenta")
     private Long id;
-
-    @Column(name = "numeroCuenta", unique = true, nullable = false)
-    private String numeroCuenta;
 
     @Column(name = "tipoCuenta", nullable = false)
     private String tipoCuenta;
