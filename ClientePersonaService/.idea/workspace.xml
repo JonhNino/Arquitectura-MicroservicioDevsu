@@ -5,21 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec411312-bd06-45bf-a72e-5325a72af4b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BaseDatos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../BaseDatos.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/490af1de1bd5f8af8ddae4fe963c873d1996568f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/490af1de1bd5f8af8ddae4fe963c873d1996568f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c241c478426474634cef2274d7a6049921511fb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c241c478426474634cef2274d7a6049921511fb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/020c20e098be6c85f4ee8c7ec25487883da236ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4babf53657dc2aa24d147b46ad45519bf21f8e11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f1c68b06f812e8bbb8bd94158cc7106875e1f1b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/5575f88032f7a52513274cc9dd48ee60fe4283aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63a618b235e05db99dd3b186b5c1cdec23e072fd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d162022a44c6e1b8b97888ed055ed5a8146f28e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98912cbe8e1e0a541e9a14a5bcfb441f82355f4a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98912cbe8e1e0a541e9a14a5bcfb441f82355f4a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b21f66ed725763b21d49b679e404271360fd6e0a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccc145db892922edc5ff5b1b8ef89550e0fe8e7e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/2/020c20e098be6c85f4ee8c7ec25487883da236ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/b/4babf53657dc2aa24d147b46ad45519bf21f8e11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/f/4f1c68b06f812e8bbb8bd94158cc7106875e1f1b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/5/5575f88032f7a52513274cc9dd48ee60fe4283aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/3/63a618b235e05db99dd3b186b5c1cdec23e072fd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/d/6d162022a44c6e1b8b97888ed055ed5a8146f28e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/2/b21f66ed725763b21d49b679e404271360fd6e0a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/c/ccc145db892922edc5ff5b1b8ef89550e0fe8e7e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/3/0/3060a5fa11939f6dd55dbf58d847a7e7926f8c88" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/3/0/3060a5fa11939f6dd55dbf58d847a7e7926f8c88" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/3/c/3ca905c84f4e81c1adda0b041e488d8eb395773e" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/3/c/3ca905c84f4e81c1adda0b041e488d8eb395773e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/controller/CuentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/controller/CuentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/5/7/5748ee874bb223e63b1968dfa7c1561bd4e5d31b" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/5/7/5748ee874bb223e63b1968dfa7c1561bd4e5d31b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/controller/MovimientoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/controller/MovimientoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/service/CuentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/service/CuentaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/service/MovimientoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/service/MovimientoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +112,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jonhn\OneDrive\Escritorio\Devsu\ClientePersonaService\ClientePersonaService\src\main\java\com\devsu\ClientePersonaService" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.devsu.ClientePersonaService.exception" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ClientePersonaServiceApplication">
     <configuration name="cliente" type="MavenRunConfiguration" factoryName="Maven">
@@ -149,6 +171,7 @@
       <workItem from="1717861219671" duration="1340000" />
       <workItem from="1717863551928" duration="600000" />
       <workItem from="1717867522326" duration="4021000" />
+      <workItem from="1717888128441" duration="5580000" />
     </task>
     <servers />
   </component>

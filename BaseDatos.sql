@@ -58,10 +58,10 @@ INSERT INTO cliente (persona_id, cliente_id, contrasena, estado) VALUES
 -- Insertar datos en Cuenta
 -- Insertar datos en Cuenta
 INSERT INTO cuenta (numero_cuenta, tipo_cuenta, saldo_inicial, estado, cliente_id) VALUES 
-(123456, 'Ahorros', 2500.00, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1234567890'))),
-(654321, 'Corriente', 1500.00, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='0987654321'))),
-(789012, 'Ahorros', 3000.00, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1122334455'))),
-(210987, 'Corriente', 500.00, TRUE, (SELECT id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1234567890')));
+(123456, 'Ahorros', 2500.00, TRUE, (SELECT cliente_id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1234567890'))),
+(654321, 'Corriente', 1500.00, TRUE, (SELECT cliente_id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='0987654321'))),
+(789012, 'Ahorros', 3000.00, TRUE, (SELECT cliente_id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1122334455'))),
+(210987, 'Corriente', 500.00, TRUE, (SELECT cliente_id FROM cliente WHERE persona_id=(SELECT id FROM persona WHERE identificacion='1234567890')));
 
 
 SELECT numero_cuenta FROM cuenta WHERE numero_cuenta='478758'; 

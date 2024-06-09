@@ -1,7 +1,12 @@
 package com.Devsu.CuentaMovimientosService.controller;
+
+import com.Devsu.CuentaMovimientosService.model.ErrorResponse;
 import com.Devsu.CuentaMovimientosService.model.Movimiento;
 import com.Devsu.CuentaMovimientosService.service.MovimientoService;
+import com.Devsu.CuentaMovimientosService.utils.Constants;
+import com.Devsu.CuentaMovimientosService.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +18,8 @@ import java.util.Optional;
 public class MovimientoController {
     @Autowired
     private MovimientoService movimientoService;
+    @Autowired
+    private Utils utils;
 
     @GetMapping
     public List<Movimiento> getAllUsers() {
@@ -30,24 +37,37 @@ public class MovimientoController {
     }
 
     @PostMapping
-    public Movimiento createUser(@RequestBody Movimiento user) {
-        return movimientoService.saveUser(user);
+    public ResponseEntity<ErrorResponse> createUser(@RequestBody Movimiento user) {
+        try {
+            Movimiento postMoviento= movimientoService.saveUser(user);
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK,Constants.MOVIMIENTO_CREADO+postMoviento));
+
+        } catch (RuntimeException e) {
+            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, e.toString()), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Movimiento> updateUser(@PathVariable Long id, @RequestBody Movimiento user) {
+    public ResponseEntity<ErrorResponse> updateUser(@PathVariable Long id, @RequestBody Movimiento user) {
         try {
             Movimiento updatedUser = movimientoService.updateUser(id, user);
-            return ResponseEntity.ok(updatedUser);
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.MOVIMIENTO_ACTUALIZADO + updatedUser));
+
         } catch (RuntimeException e) {
-            return ResponseEntity.notFound().build();
+            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, e.toString()), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
-        movimientoService.deleteUser(id);
-        return ResponseEntity.noContent().build();
+    public ResponseEntity<ErrorResponse> deleteUser(@PathVariable Long id) {
+        try {
+            movimientoService.deleteUser(id);
+
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.MOVIMIENTO_ELIMINADO + id));
+
+        } catch (Exception e) {
+            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, e.toString()), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 }
 

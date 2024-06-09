@@ -1,7 +1,12 @@
 package com.Devsu.CuentaMovimientosService.controller;
+
 import com.Devsu.CuentaMovimientosService.model.Cuenta;
+import com.Devsu.CuentaMovimientosService.model.ErrorResponse;
 import com.Devsu.CuentaMovimientosService.service.CuentaService;
+import com.Devsu.CuentaMovimientosService.utils.Constants;
+import com.Devsu.CuentaMovimientosService.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +19,8 @@ public class CuentaController {
 
     @Autowired
     private CuentaService cuentaService;
+    @Autowired
+    private Utils utils;
 
     @GetMapping
     public List<Cuenta> getAllUsers() {
@@ -31,24 +38,33 @@ public class CuentaController {
     }
 
     @PostMapping
-    public Cuenta createUser(@RequestBody Cuenta user) {
-        return cuentaService.saveUser(user);
+    public ResponseEntity<ErrorResponse> createUser(@RequestBody Cuenta user) {
+        try {
+            Cuenta postCuenta = cuentaService.saveUser(user);
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.CUENTA_CREADO + postCuenta));
+        } catch (RuntimeException e) {
+            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, e.toString()), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Cuenta> updateUser(@PathVariable Long id, @RequestBody Cuenta user) {
+    public ResponseEntity<ErrorResponse> updateUser(@PathVariable Long id, @RequestBody Cuenta user) {
         try {
             Cuenta updatedUser = cuentaService.updateUser(id, user);
-            return ResponseEntity.ok(updatedUser);
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.CUENTA_ACTUALIZADO + updatedUser));
         } catch (RuntimeException e) {
-            return ResponseEntity.notFound().build();
+            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, e.toString()), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
-        cuentaService.deleteUser(id);
-        return ResponseEntity.noContent().build();
+    public ResponseEntity<ErrorResponse> deleteUser(@PathVariable Long id) {
+        try {
+            cuentaService.deleteUser(id);
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.CUENTA_ELIMINADO + id));
+        } catch (Exception e) {
+            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, e.toString()), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 }
 

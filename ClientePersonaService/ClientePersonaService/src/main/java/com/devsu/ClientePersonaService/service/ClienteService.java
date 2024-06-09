@@ -21,10 +21,12 @@ public class ClienteService {
     private PersonaRepository personaRepository;
 
     public List<Cliente> findAllUsers() {
+
         return clienteRepository.findAll();
     }
 
     public Optional<Cliente> findUserById(Long id) {
+
         return clienteRepository.findById(id);
     }
 
@@ -33,10 +35,8 @@ public class ClienteService {
         // Guarda la entidad Persona primero
         Persona persona = user.getPersona();
         Persona savedPersona = personaRepository.save(persona);
-
         // Asigna la entidad Persona guardada a la entidad Cliente
         user.setPersona(savedPersona);
-
         // Guarda la entidad Cliente
         return clienteRepository.save(user);
     }

@@ -29,3 +29,9 @@ hCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/servi
 jCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/controller/CuentaController.java,b\4\b469a986fcdff58373c3fd66564b96ac442baf47
 ž
 nCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/controller/MovimientoController.java,5\7\5748ee874bb223e63b1968dfa7c1561bd4e5d31b
+’
+bCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/ErrorResponse.java,1\8\180e5832bb075ba60c99d662bbc5fa989d09ea0a
+Ž
+^CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Constants.java,c\5\c57a3380899026417bd4895e4b54bde009c33806
+Š
+ZCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Utils.java,3\3\33ae24555ffd20a30650794a02fe72dca74cb64c
