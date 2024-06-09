@@ -35,3 +35,15 @@ bCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model
 ^CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Constants.java,c\5\c57a3380899026417bd4895e4b54bde009c33806
 Š
 ZCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Utils.java,3\3\33ae24555ffd20a30650794a02fe72dca74cb64c
+Œ
+\CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Reporte.java,5\8\587166d9ce3046b99f6d1d7f080e8b752fe3f565
+”
+dCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/Reporte.java,d\8\d8acb6b100adb41ba54e79a54414d5a6cfc44a52
+š
+jCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/CuentaReporte.java,b\8\b8a2f34c7d5894ab4ec70f184d777a90addce6ee
+ž
+nCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/MovimientoReporte.java,5\5\55185e74693ce2ec7bc5e75ab7fd98144c1e81c1
+ž
+nCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/clientFechas/ClientFechas.java,7\2\72472ca33c4349ab0b37429f060a042ab653e834
+‘
+aCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/PublisherConfig.java,f\c\fc51e431abccded51ed17b79f906ca5976add898

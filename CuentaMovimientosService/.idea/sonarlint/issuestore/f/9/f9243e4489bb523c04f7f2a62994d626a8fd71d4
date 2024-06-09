@@ -1,4 +1,10 @@
 
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ä«E8Ûˆ–²ÿ1
-{
-java:S2142%"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ìˆ–²ÿ1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ä«E8°ÙÄöÿ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8³ÙÄöÿ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8†²Ò÷ÿ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8†²Ò÷ÿ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8×ÕØ÷ÿ1

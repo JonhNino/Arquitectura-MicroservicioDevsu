@@ -1,5 +1,11 @@
 
-b	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(…´˜ù8Ô‡†Îÿ1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(š§Şáùÿÿÿÿ8ŠåéÆÿ1
+b	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(…´˜ù8™ã¿öÿ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(š§Şáùÿÿÿÿ8œã¿öÿ1
+d
+java:S3824J"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".(¦…ô8Ä¾ûöÿ1
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‘°µÊÿ1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¡ã¿öÿ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¡ã¿öÿ1
+€
+java:S1128"cRemove this unused import 'com.Devsu.CuentaMovimientosService.CuentaMovimientosServiceApplication'.(¶¤Ò8Í¾ûöÿ1

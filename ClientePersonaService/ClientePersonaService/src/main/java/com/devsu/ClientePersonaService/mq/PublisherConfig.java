@@ -10,4 +10,11 @@ public class PublisherConfig {
     public Queue publisherQueue() {
         return new Queue("clienteCuenta", true);
     }
+
+    @Bean
+    public Queue replyQueue() {
+        return new Queue("replyQueue", false);
+    }
+
+
 }

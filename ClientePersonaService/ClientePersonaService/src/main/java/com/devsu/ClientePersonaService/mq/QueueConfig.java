@@ -11,5 +11,9 @@ public class QueueConfig {
     public Queue clienteCuentaQueue() {
         return new Queue("clienteCuenta", true);
     }
+    @Bean
+    public Queue replyQueue() {
+        return new Queue("movimientoCliente", false);
+    }
 }
 

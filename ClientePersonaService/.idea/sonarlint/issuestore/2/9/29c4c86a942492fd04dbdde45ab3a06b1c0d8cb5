@@ -1,0 +1,16 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(– Òãıÿÿÿÿ8í¢øÿ1
+_
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8ó¢øÿ1
+_
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8ó¢øÿ1
+_
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8ó¢øÿ1
+^
+java:S18544"BRemove this useless assignment to local variable "futureResponse".(˜ §8¹¹¦øÿ1
+O
+java:S14814"3Remove this unused "futureResponse" local variable.(˜ §8¼¹¦øÿ1
+]	java:S125J"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8ø¢øÿ1
+]	java:S125L"<This block of commented-out lines of code should be removed.(Åú†Íøÿÿÿÿ8ø¢øÿ1
+R
+java:S1068"0Remove this unused "objectMapper" private field.(“»‚Šûÿÿÿÿ8ù¢øÿ1

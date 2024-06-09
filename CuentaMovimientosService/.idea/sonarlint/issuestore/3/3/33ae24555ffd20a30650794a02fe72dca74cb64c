@@ -1,4 +1,5 @@
 
 Q
-java:S1066"/Merge this if statement with the enclosing one.(ÅÈ‰ªıÿÿÿÿ8¶Ï³Ùÿ1
+java:S1066 "/Merge this if statement with the enclosing one.(ÅÈ‰ªıÿÿÿÿ8¶Ï³Ùÿ1
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Èûòÿÿÿÿÿ
+X	java:S1257"<This block of commented-out lines of code should be removed.(ÌßòÑ8£¸Õ÷ÿ1

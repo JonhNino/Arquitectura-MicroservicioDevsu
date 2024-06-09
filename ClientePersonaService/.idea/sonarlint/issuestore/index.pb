@@ -35,3 +35,15 @@ bClientePersonaService/src/main/java/com/devsu/ClientePersonaService/exception/C
 XClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Constants.java,4\e\4e645df1b8fe3dfb8f338ab1d3f00c7f7a0e3209
 „
 TClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Utils.java,9\8\988191cdefff9db97171bb15657603811ef7e353
+–
+fClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ReporterController.java,2\9\29c4c86a942492fd04dbdde45ab3a06b1c0d8cb5
+˜
+hClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/clientFechas/ClientFechas.java,6\2\626264676cee53fd55f9628a57bfa2a9c7489d8c
+‹
+[ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/PublisherConfig.java,5\e\5e33a22f83d5c3f601e1cf38b59cd7b756451b3f
+‡
+WClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/QueueConfig.java,1\f\1faa2daa287e4e4e1e53c8da273cd2dd3dc192f9
+ˆ
+XClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitConfig.java,5\8\588d5cd8ce004e3c27383704b100c24afad9e643
+Ž
+^ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyController.java,e\8\e857f0a15ac96f28718cccaf81b95417d24b0804
