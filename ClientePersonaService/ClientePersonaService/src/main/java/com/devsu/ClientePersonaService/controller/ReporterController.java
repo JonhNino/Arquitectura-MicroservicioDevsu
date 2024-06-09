@@ -20,6 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDate;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 @RestController
@@ -41,43 +42,58 @@ public class ReporterController {
     public ReporterController(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
     }
-
+    private CompletableFuture<String> futureResponse = new CompletableFuture<>();
     @GetMapping
     public ResponseEntity<ErrorResponse> getReportes(
             @RequestParam("fecha") String fecha,
             @RequestParam("cliente") Long clienteId) {
 
         String[] fechas = fecha.split(":");
-        log.info("RequestParam"+fecha+clienteId);
-        CompletableFuture<String> futureResponse = new CompletableFuture<>();
+        log.info("RequestParam" + fecha + clienteId);
 
+        String message = "";
         if (fechas.length == 1) {
-
-            rabbitTemplate.convertAndSend(clienteCuentaQueue.getName(), sendClientFechas(clienteId,LocalDate.parse(fechas[0]),LocalDate.parse(fechas[0])));
-
+            message = sendClientFechas(clienteId, LocalDate.parse(fechas[0]), LocalDate.parse(fechas[0]));
         } else if (fechas.length == 2) {
-
-            rabbitTemplate.convertAndSend(clienteCuentaQueue.getName(), sendClientFechas(clienteId,LocalDate.parse(fechas[0]),LocalDate.parse(fechas[1])));
-
+            message = sendClientFechas(clienteId, LocalDate.parse(fechas[0]), LocalDate.parse(fechas[1]));
         } else {
             return ResponseEntity.badRequest().body(utils.buildErrorResponse(Constants.BAD_REQUEST, "Fecha Incorrecta"));
         }
-        // aca quiero recibir el mensaje
-        return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, "Bien Bien"));
+
+        rabbitTemplate.convertAndSend(clienteCuentaQueue.getName(), message);
+
+        synchronized (futureResponse) {
+            try {
+                futureResponse.wait();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, "Error interno del servidor"));
+            }
+        }
+
+        String responseMessage;
+        try {
+            responseMessage = futureResponse.get(); // Obtener el mensaje recibido
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, "Error interno del servidor"));
+        }
+
+        return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, responseMessage));
     }
 
 
     @RabbitListener(queues = { "${movimientoCliente.queue.name}" })
-    public String receive(@Payload String message) {
-        log.info("Received message {}", message);
-        return  message;
-       // try {
-
-       //     ClientFechas receivedCliente = objectMapper.readValue(message, ClientFechas.class);
-        //    rabbitTemplate.convertAndSend(clienteCuentaQueue.getName(), utils.convertAndSend(cuentaService.getCuentasConMovimientos(receivedCliente.getClientId(),receivedCliente.getFecha1().toString(),receivedCliente.getFecha2().toString(),receivedCliente.getFecha1().toString())));
-        //} catch (Exception e) {
-         //   log.error("Error deserializing JSON to Cliente", e);
-    //    }
+    public void receiveMovimientoCliente(@Payload String message) {
+        log.info("Received message from movimientoCliente {}", message);
+        try {
+            // Procesar el mensaje
+            futureResponse.complete(message);
+            synchronized (futureResponse) {
+                futureResponse.notify();  // Notificar al método getReportes que el mensaje ha sido recibido
+            }
+        } catch (Exception e) {
+            log.error("Error deserializing JSON from movimientoCliente", e);
+        }
     }
 
     public String sendClientFechas(Long clienteId, LocalDate date1, LocalDate date2){

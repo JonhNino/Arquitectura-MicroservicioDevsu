@@ -93,7 +93,6 @@ public class CuentaService {
 
         Reporte reporte = new Reporte();
         reporte.setCuentas(new ArrayList<>(cuentaMap.values()));
-        LOGGER.info("Reporte desde Servicio: " + reporte.toString());
 
         return reporte;
     }

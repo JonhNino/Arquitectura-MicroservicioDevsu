@@ -47,3 +47,5 @@ WClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/QueueCon
 XClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitConfig.java,5\8\588d5cd8ce004e3c27383704b100c24afad9e643
 Ž
 ^ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyController.java,e\8\e857f0a15ac96f28718cccaf81b95417d24b0804
+Š
+ZClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitMQConfig.java,5\d\5d43508338fe8c9d817063e3d7278d87b648c3ad

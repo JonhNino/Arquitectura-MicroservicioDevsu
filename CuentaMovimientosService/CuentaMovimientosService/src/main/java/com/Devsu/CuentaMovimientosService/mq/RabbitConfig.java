@@ -1,50 +1,48 @@
 package com.Devsu.CuentaMovimientosService.mq;
+
+import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
 import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
-import org.springframework.amqp.support.converter.DefaultJackson2JavaTypeMapper;
-import org.springframework.amqp.support.converter.Jackson2JavaTypeMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.Map;
-
 @Configuration
 public class RabbitConfig {
-
     @Bean
-    public Jackson2JsonMessageConverter consumerJackson2MessageConverter() {
-        Jackson2JsonMessageConverter converter = new Jackson2JsonMessageConverter();
-        DefaultJackson2JavaTypeMapper typeMapper = new DefaultJackson2JavaTypeMapper();
-        typeMapper.setIdClassMapping(Map.of(
-                "com.Devsu.CuentaMovimientosService.model.Cliente", com.Devsu.CuentaMovimientosService.model.Cliente.class
-             //   "com.Devsu.ClientePersonaService.model.Cliente", com.Devsu.ClientePersonaService.model.Cliente.class
-        ));
-        typeMapper.setTypePrecedence(Jackson2JavaTypeMapper.TypePrecedence.TYPE_ID);
-
-        // Agrega ambos paquetes a la lista de paquetes de confianza
-        typeMapper.setTrustedPackages("com.Devsu.CuentaMovimientosService.model", "com.Devsu.ClientePersonaService.model");
-
-        converter.setJavaTypeMapper(typeMapper);
-        return converter;
+    public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
+        return new RabbitTemplate(connectionFactory);
     }
 
+    @Bean
+    public Queue clienteCuentaQueue() {
+        return new Queue("clienteCuenta", true);  // Asegúrate de que sea durable si es necesario
+    }
+
+    @Bean
+    public Queue movimientoClienteQueue() {
+        return new Queue("movimientoCliente", true);  // Asegúrate de que sea durable si es necesario
+    }
 
     @Bean
     public SimpleMessageListenerContainer messageListenerContainer(ConnectionFactory connectionFactory,
                                                                    MessageListenerAdapter listenerAdapter) {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
         container.setConnectionFactory(connectionFactory);
-        container.setQueueNames("clienteCuenta");
+        container.setQueueNames("clienteCuentaQueue");
         container.setMessageListener(listenerAdapter);
         return container;
     }
 
     @Bean
     public MessageListenerAdapter listenerAdapter(Consumer consumer) {
-        MessageListenerAdapter messageListenerAdapter = new MessageListenerAdapter(consumer, "receive");
-        messageListenerAdapter.setMessageConverter(consumerJackson2MessageConverter());
-        return messageListenerAdapter;
+        return new MessageListenerAdapter(consumer, "receive");
+    }
+
+    @Bean
+    public Jackson2JsonMessageConverter producerJackson2MessageConverter() {
+        return new Jackson2JsonMessageConverter();
     }
 }

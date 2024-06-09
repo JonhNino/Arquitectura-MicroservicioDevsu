@@ -28,7 +28,7 @@ public class Consumer {
     private RabbitTemplate rabbitTemplate;
 
     @Autowired
-    private Queue clienteCuentaQueue;
+    private Queue movimientoClienteQueue;
 
     public Consumer(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
@@ -39,7 +39,12 @@ public class Consumer {
         log.info("Received message {}", message);
         try {
             ClientFechas receivedCliente = objectMapper.readValue(message, ClientFechas.class);
-            rabbitTemplate.convertAndSend(clienteCuentaQueue.getName(), utils.convertAndSend(cuentaService.getCuentasConMovimientos(receivedCliente.getClientId(),receivedCliente.getFecha1().toString(),receivedCliente.getFecha2().toString(),receivedCliente.getFecha1().toString())));
+            if (receivedCliente.getFecha1() == null || receivedCliente.getFecha2() == null) {
+                log.error("Received message with null dates: {}", message);
+                return;
+            }
+
+            rabbitTemplate.convertAndSend(movimientoClienteQueue.getName(), utils.convertAndSend(cuentaService.getCuentasConMovimientos(receivedCliente.getClientId(),receivedCliente.getFecha1().toString(),receivedCliente.getFecha2().toString(),receivedCliente.getFecha1().toString())));
         } catch (Exception e) {
             log.error("Error deserializing JSON to Cliente", e);
         }
