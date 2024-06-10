@@ -83,3 +83,5 @@ iClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteCont
 _ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteIntegrationTest.java,3\3\33b77e2f4eab74ff41b5a2263bb2519f992df3d2
 š
 jClientePersonaService/src/test/java/com/devsu/ClientePersonaService/controller/ClienteIntegrationTest.java,a\5\a57a108c374963353215342df1169be271fb13a4
+P
+ ClientePersonaService/Dockerfile,8\0\80d2220ebe0e225f140248981e68df1be2198a0b

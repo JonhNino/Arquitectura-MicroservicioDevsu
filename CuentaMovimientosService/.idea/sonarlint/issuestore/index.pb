@@ -47,3 +47,5 @@ nCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model
 nCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/clientFechas/ClientFechas.java,7\2\72472ca33c4349ab0b37429f060a042ab653e834
 ‘
 aCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/PublisherConfig.java,f\c\fc51e431abccded51ed17b79f906ca5976add898
+S
+#CuentaMovimientosService/Dockerfile,d\d\dd011ef6ded56e65d8d8e01ae706d5deeaa51f16

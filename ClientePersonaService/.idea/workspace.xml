@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec411312-bd06-45bf-a72e-5325a72af4b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BaseDatos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../BaseDatos.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c241c478426474634cef2274d7a6049921511fb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c241c478426474634cef2274d7a6049921511fb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/controller/ClienteIntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/service/ClienteServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.All in ClientePersonaService (1).executor": "Coverage",
     "JUnit.All in ClientePersonaService.executor": "Coverage",
     "JUnit.ClienteControllerIntegrationTest.executor": "Run",
     "JUnit.ClienteIntegrationTest.shouldCreateClient.executor": "Run",
@@ -67,6 +68,7 @@
     "JUnit.ClienteServiceTest.testUpdateUser_NotFound.executor": "Run",
     "Maven.ClientePersonaService [clean].executor": "Run",
     "Maven.ClientePersonaService [install].executor": "Run",
+    "Maven.ClientePersonaService [package].executor": "Run",
     "Maven.cliente.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -101,14 +103,18 @@
       <recent name="C:\Users\jonhn\OneDrive\Escritorio\Devsu\ClientePersonaService\ClientePersonaService\src\main\java\com\devsu\ClientePersonaService\model" />
       <recent name="C:\Users\jonhn\OneDrive\Escritorio\Devsu\ClientePersonaService\ClientePersonaService\src\main\java\com\devsu\ClientePersonaService" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.devsu.ClientePersonaService.service" />
+      <recent name="com.devsu.ClientePersonaService.controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devsu.ClientePersonaService.mq" />
       <recent name="com.devsu.ClientePersonaService.controller" />
       <recent name="com.devsu.ClientePersonaService.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClienteIntegrationTest.shouldGetAllClients">
-    <configuration name="All in ClientePersonaService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ClienteIntegrationTest.shouldCreateClient">
+    <configuration name="All in ClientePersonaService (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClientePersonaService" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -216,21 +222,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.All in ClientePersonaService (1)" />
       <item itemvalue="JUnit.ClienteControllerIntegrationTest" />
       <item itemvalue="JUnit.ClienteIntegrationTest.shouldCreateClient" />
       <item itemvalue="JUnit.ClienteIntegrationTest.shouldGetAllClients" />
-      <item itemvalue="JUnit.All in ClientePersonaService" />
       <item itemvalue="JUnit.ClienteServiceTest" />
       <item itemvalue="Maven.cliente" />
       <item itemvalue="Spring Boot.ClientePersonaServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ClienteIntegrationTest.shouldGetAllClients" />
         <item itemvalue="JUnit.ClienteIntegrationTest.shouldCreateClient" />
+        <item itemvalue="JUnit.All in ClientePersonaService (1)" />
+        <item itemvalue="JUnit.ClienteIntegrationTest.shouldGetAllClients" />
         <item itemvalue="JUnit.ClienteControllerIntegrationTest" />
         <item itemvalue="JUnit.ClienteServiceTest" />
-        <item itemvalue="JUnit.All in ClientePersonaService" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +263,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteServiceTest.java</url>
+          <url>file://$PROJECT_DIR$/ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/service/ClienteServiceTest.java</url>
           <line>20</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
@@ -265,6 +271,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ClientePersonaService$All_in_ClientePersonaService__1_.ic" NAME="All in ClientePersonaService (1) Coverage Results" MODIFIED="1718051779567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ClientePersonaService$All_in_ClientePersonaService.ic" NAME="All in ClientePersonaService Coverage Results" MODIFIED="1718048121441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
