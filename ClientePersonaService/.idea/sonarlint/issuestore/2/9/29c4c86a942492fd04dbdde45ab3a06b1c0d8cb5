@@ -1,16 +1,18 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(– Òãıÿÿÿÿ8í¢øÿ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(– Òãıÿÿÿÿ8Çø…üÿ1
 _
-java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ8ó¢øÿ1
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8Óø…üÿ1
 _
-java:S6813$"BRemove this field injection and use constructor injection instead.(êæÄŞ8ó¢øÿ1
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8Óø…üÿ1
 _
-java:S6813'"BRemove this field injection and use constructor injection instead.(êæÄŞ8ó¢øÿ1
-V
-java:S2274C":Remove this call to "wait" or move it into a "while" loop.(´‡%8Ö«èùÿ1
-{
-java:S2142M"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾8Ø«èùÿ1
-M
-java:S2446\"0"notify" may not wake up the appropriate thread.(¼‡æ’8ò‚èùÿ1
-R
-java:S1068"0Remove this unused "objectMapper" private field.(“»‚Šûÿÿÿÿ8ù¢øÿ1
+java:S6813("BRemove this field injection and use constructor injection instead.(êæÄŞ8Óø…üÿ1
+T
+java:S6863P"2Set a HttpStatus code reflective of the operation.(ÄÑ­Íıÿÿÿÿ8Á‘üÿ1
+T
+java:S6863T"2Set a HttpStatus code reflective of the operation.(ş¥Ş¥ûÿÿÿÿ8Á‘üÿ1
+Q
+java:S1172˜".Remove this unused method parameter "message".(ïˆ‚Äûÿÿÿÿ8éø…üÿ1
+;
+java:S2119™"Save and re-use this "Random".(¼İÅf8éø…üÿ1
+<
+java:S2140›"Use "nextLong()" instead.(Î¶¯İøÿÿÿÿ8éø…üÿ1

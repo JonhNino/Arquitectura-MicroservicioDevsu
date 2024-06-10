@@ -77,6 +77,7 @@ public class CuentaService {
                 cuentaReporte.setTipoCuenta((String) row.get("tipo_cuenta"));
                 cuentaReporte.setSaldoInicial((Double) row.get("saldo_inicial"));
                 cuentaReporte.setEstado((Boolean) row.get("estado"));
+                cuentaReporte.setClienteId(clienteId);
                 cuentaReporte.setMovimientos(new ArrayList<>());
                 cuentaMap.put(numeroCuenta, cuentaReporte);
             }

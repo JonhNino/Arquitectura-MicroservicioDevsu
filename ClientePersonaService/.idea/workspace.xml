@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec411312-bd06-45bf-a72e-5325a72af4b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/exception/EmptyReportException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/CuentaReporte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/MovimientoReporte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/Reporte.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29c4c86a942492fd04dbdde45ab3a06b1c0d8cb5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29c4c86a942492fd04dbdde45ab3a06b1c0d8cb5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ReporterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ReporterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/Publisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/PublisherConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/QueueConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/exception/CustomException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/3/c/3ca905c84f4e81c1adda0b041e488d8eb395773e" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/3/c/3ca905c84f4e81c1adda0b041e488d8eb395773e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/PublisherConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/RabbitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/CuentaReporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/CuentaReporte.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/service/CuentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/service/CuentaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,37 +58,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.ClientePersonaService [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ClientePersonaService [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.cliente.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ClientePersonaServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jonhn/OneDrive/Escritorio/Devsu/ClientePersonaService/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.ClientePersonaService [clean].executor": "Run",
+    "Maven.ClientePersonaService [install].executor": "Run",
+    "Maven.cliente.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ClientePersonaServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jonhn/OneDrive/Escritorio/Devsu/ClientePersonaService/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonhn\OneDrive\Escritorio\Devsu\ClientePersonaService\ClientePersonaService\src\main\java\com\devsu\ClientePersonaService\model" />
       <recent name="C:\Users\jonhn\OneDrive\Escritorio\Devsu\ClientePersonaService\ClientePersonaService\src\main\java\com\devsu\ClientePersonaService" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -154,7 +153,7 @@
       <workItem from="1717861219671" duration="1340000" />
       <workItem from="1717863551928" duration="600000" />
       <workItem from="1717867522326" duration="4021000" />
-      <workItem from="1717888128441" duration="16224000" />
+      <workItem from="1717888128441" duration="21293000" />
     </task>
     <servers />
   </component>

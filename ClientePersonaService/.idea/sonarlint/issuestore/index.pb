@@ -49,3 +49,11 @@ XClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitCo
 ^ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyController.java,e\8\e857f0a15ac96f28718cccaf81b95417d24b0804
 Š
 ZClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitMQConfig.java,5\d\5d43508338fe8c9d817063e3d7278d87b648c3ad
+Ž
+^ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/Reporte.java,f\7\f7eb51a72bff43afd192277a499f9f6da103059e
+”
+dClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/CuentaReporte.java,9\0\908407aa7565e615035f36380360074915e9a39c
+˜
+hClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/MovimientoReporte.java,1\3\138cf93aa9da04d24f86b09c9e842aa2172fb038
+—
+gClientePersonaService/src/main/java/com/devsu/ClientePersonaService/exception/EmptyReportException.java,6\c\6c9f4cb772ecb909558b3a78834845affd261d5e
