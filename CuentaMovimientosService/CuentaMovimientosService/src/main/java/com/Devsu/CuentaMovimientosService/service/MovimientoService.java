@@ -42,6 +42,7 @@ public class MovimientoService {
             throw new RuntimeException("User not found with id " + id);
         }
     }
+
     public void deleteUser(Long id) {
         movimientoRepository.deleteById(id);
     }

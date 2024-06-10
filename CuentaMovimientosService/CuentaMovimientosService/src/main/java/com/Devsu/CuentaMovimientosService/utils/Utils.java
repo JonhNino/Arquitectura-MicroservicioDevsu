@@ -51,11 +51,11 @@ public class Utils {
     public String convertAndSend(Reporte clientFechas) {
         try {
             String clientFechasJson = objectMapper.writeValueAsString(clientFechas);
-            log.info("Reporte JSON: {}"+ clientFechasJson);
+            log.info("Reporte JSON: {}" + clientFechasJson);
             //  this.publisher.send(clientFechasJson);
             return clientFechasJson;
         } catch (Exception e) {
-            log.warning("Error converting ClientFechas to JSON"+ e);
+            log.warning("Error converting ClientFechas to JSON" + e);
             return null;
         }
     }

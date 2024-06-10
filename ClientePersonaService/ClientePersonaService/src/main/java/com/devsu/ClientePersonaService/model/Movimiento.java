@@ -1,7 +1,8 @@
 package com.devsu.ClientePersonaService.model;
 
-import lombok.Data;
 import jakarta.persistence.*;
+import lombok.Data;
+
 import java.util.Date;
 
 @Entity

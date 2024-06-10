@@ -44,8 +44,8 @@ public class MovimientoController {
                 return validationResponse;
             }
             movimiento = utils.updateSaldo(movimiento);
-            Movimiento postMoviento= movimientoService.saveUser(movimiento);
-            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK,Constants.MOVIMIENTO_CREADO+postMoviento));
+            Movimiento postMoviento = movimientoService.saveUser(movimiento);
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.MOVIMIENTO_CREADO + postMoviento));
         } catch (RuntimeException e) {
             return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, e.toString()), HttpStatus.INTERNAL_SERVER_ERROR);
         }

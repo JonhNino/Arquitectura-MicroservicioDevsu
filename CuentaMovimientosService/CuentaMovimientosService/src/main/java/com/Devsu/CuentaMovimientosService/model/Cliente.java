@@ -1,8 +1,8 @@
 package com.Devsu.CuentaMovimientosService.model;
 
+import jakarta.persistence.*;
 import lombok.Data;
 
-import jakarta.persistence.*;
 @Entity
 @Table(name = "Cliente")
 @Data

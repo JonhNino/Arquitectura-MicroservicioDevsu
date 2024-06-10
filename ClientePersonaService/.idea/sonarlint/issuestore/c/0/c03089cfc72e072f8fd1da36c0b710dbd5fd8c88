@@ -1,0 +1,18 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Âş†¾øÿÿÿÿ
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8è‹Ùÿÿ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¡æİÿÿ1
+_
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8ƒ‘ßÿÿ1
+_
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8â¡áÿÿ1
+W
+java:S22090"5Change this instance-reference to a static reference.(…€Çıÿÿÿÿ8ë·Ûÿÿ1
+P
+java:S1172n".Remove this unused method parameter "message".(ïˆ‚Äûÿÿÿÿ8ğ‹Ùÿÿ1
+:
+java:S2119o"Save and re-use this "Random".(¼İÅf8è½Ùÿÿ1
+;
+java:S2140p"Use "nextLong()" instead.(Î¶¯İøÿÿÿÿ8è½Ùÿÿ1

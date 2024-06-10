@@ -1,18 +1,22 @@
 
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(– Òãıÿÿÿÿ8ı¡°şÿ1
 _
-java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8†¢°şÿ1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Û¶Øÿÿ1
 _
-java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8†¢°şÿ1
-_
-java:S6813("BRemove this field injection and use constructor injection instead.(êæÄŞ8†¢°şÿ1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Û¶Øÿÿ1
 T
-java:S6863S"2Set a HttpStatus code reflective of the operation.(ìõ±ƒıÿÿÿÿ8‡¢°şÿ1
+java:S6863?"2Set a HttpStatus code reflective of the operation.(ìõ±ƒıÿÿÿÿ8Ü¶Øÿÿ1
 O
-java:S6863W"2Set a HttpStatus code reflective of the operation.(Ï¡Ÿ8‡¢°şÿ1
-Q
-java:S1172".Remove this unused method parameter "message".(ïˆ‚Äûÿÿÿÿ8“¢°şÿ1
-;
-java:S2119"Save and re-use this "Random".(¼İÅf8”¢°şÿ1
-<
-java:S2140"Use "nextLong()" instead.(Î¶¯İøÿÿÿÿ8”¢°şÿ1
+java:S6863C"2Set a HttpStatus code reflective of the operation.(Ï¡Ÿ8Ü¶Øÿÿ1
+W
+java:S22091"5Change this instance-reference to a static reference.(œÆÔáüÿÿÿÿ8å¶Øÿÿ1
+R
+java:S22098"5Change this instance-reference to a static reference.(øÍ›â8æ¶Øÿÿ1
+R
+java:S2209;"5Change this instance-reference to a static reference.(„±Öı8æ¶Øÿÿ1
+W
+java:S2209?"5Change this instance-reference to a static reference.(ìõ±ƒıÿÿÿÿ8ç¶Øÿÿ1
+R
+java:S2209A"5Change this instance-reference to a static reference.(„±Öı8ç¶Øÿÿ1
+R
+java:S2209C"5Change this instance-reference to a static reference.(Ï¡Ÿ8ç¶Øÿÿ1

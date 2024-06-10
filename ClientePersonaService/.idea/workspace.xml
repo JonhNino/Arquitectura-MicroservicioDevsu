@@ -5,27 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec411312-bd06-45bf-a72e-5325a72af4b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/CuentaReporteFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/MovimientoReporteFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/ReporteFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/UtilReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/ReportConversionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/0066ce2803089240cc094921e49d865a6ad5a4bf" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/0066ce2803089240cc094921e49d865a6ad5a4bf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29c4c86a942492fd04dbdde45ab3a06b1c0d8cb5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29c4c86a942492fd04dbdde45ab3a06b1c0d8cb5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/988191cdefff9db97171bb15657603811ef7e353" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/988191cdefff9db97171bb15657603811ef7e353" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98912cbe8e1e0a541e9a14a5bcfb441f82355f4a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98912cbe8e1e0a541e9a14a5bcfb441f82355f4a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a490968d196c71f1dfa710575ebe084d2afd0f6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a490968d196c71f1dfa710575ebe084d2afd0f6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c241c478426474634cef2274d7a6049921511fb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c241c478426474634cef2274d7a6049921511fb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/ClientePersonaServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/ClientePersonaServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ClienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ReporterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ReporterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/CuentaReporte.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/MovimientoReporte.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/Reporte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Movimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Movimiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/CuentaReporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/CuentaReporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/MovimientoReporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/MovimientoReporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/CuentaReporteFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/CuentaReporteFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/MovimientoReporteFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/MovimientoReporteFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ClienteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/UtilReport.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/CuentaReporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/CuentaReporte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/MovimientoReporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/MovimientoReporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/3/c/3ca905c84f4e81c1adda0b041e488d8eb395773e" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/3/c/3ca905c84f4e81c1adda0b041e488d8eb395773e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/d/8/d8acb6b100adb41ba54e79a54414d5a6cfc44a52" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/d/8/d8acb6b100adb41ba54e79a54414d5a6cfc44a52" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/f/9/f9243e4489bb523c04f7f2a62994d626a8fd71d4" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/f/9/f9243e4489bb523c04f7f2a62994d626a8fd71d4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/CuentaMovimientosServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/CuentaMovimientosServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/controller/MovimientoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/controller/MovimientoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Movimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Movimiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/Reporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/Reporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/service/CuentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/service/CuentaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/service/MovimientoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/service/MovimientoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,22 +185,11 @@
       <workItem from="1717861219671" duration="1340000" />
       <workItem from="1717863551928" duration="600000" />
       <workItem from="1717867522326" duration="4021000" />
-      <workItem from="1717888128441" duration="25768000" />
+      <workItem from="1717888128441" duration="29220000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/UtilReport.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

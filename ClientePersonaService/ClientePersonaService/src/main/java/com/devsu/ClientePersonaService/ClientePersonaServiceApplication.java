@@ -11,11 +11,11 @@ import java.util.logging.Logger;
 @EntityScan(basePackages = "com.devsu.ClientePersonaService.model")
 @EnableJpaRepositories(basePackages = "com.devsu.ClientePersonaService.repository")
 public class ClientePersonaServiceApplication {
-	private static final Logger LOGGER = Logger.getLogger(ClientePersonaServiceApplication.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(ClientePersonaServiceApplication.class.getName());
 
-	public static void main(String[] args) {
-		SpringApplication.run(ClientePersonaServiceApplication.class, args);
-		LOGGER.info("El Microservicio ClientePersonaServiceApplication se ha iniciado correctamente.");
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ClientePersonaServiceApplication.class, args);
+        LOGGER.info("**********El Microservicio ClientePersonaServiceApplication se ha iniciado correctamente.**********");
+    }
 
 }

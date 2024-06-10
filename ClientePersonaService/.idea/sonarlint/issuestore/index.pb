@@ -71,3 +71,7 @@ rClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/repor
 nClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/CuentaReporteFinal.java,9\a\9a490968d196c71f1dfa710575ebe084d2afd0f6
 ˜
 hClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/ReporteFinal.java,2\8\28bac4108f7858fa6650e808cd0d80540c85e259
+Ž
+^ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ReportService.java,c\0\c03089cfc72e072f8fd1da36c0b710dbd5fd8c88
+”
+dClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/ReportConversionUtils.java,2\5\2500c83f41cee278284adc48b8006d5e05c676cc

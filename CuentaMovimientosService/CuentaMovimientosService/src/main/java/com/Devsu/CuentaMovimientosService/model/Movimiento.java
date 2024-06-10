@@ -1,8 +1,10 @@
 package com.Devsu.CuentaMovimientosService.model;
 
-import lombok.Data;
 import jakarta.persistence.*;
+import lombok.Data;
+
 import java.util.Date;
+
 @Entity
 @Table(name = "Movimientos")
 @Data

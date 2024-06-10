@@ -1,7 +1,7 @@
 package com.devsu.ClientePersonaService.model;
 
-import lombok.Data;
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "Cliente")

@@ -17,11 +17,11 @@ import java.util.Optional;
 @RequestMapping("/clientes")
 public class ClienteController {
 
-  //  ErrorResponse errorResponse = new ErrorResponse();
     @Autowired
     private ClienteService clienteService;
     @Autowired
     private Utils utils;
+
     @GetMapping
     public List<Cliente> getAllUsers() {
 
@@ -43,9 +43,9 @@ public class ClienteController {
     public ResponseEntity<ErrorResponse> createUser(@RequestBody Cliente user) {
         try {
             Cliente postClient = clienteService.saveUser(user);
-            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK,Constants.CLIENTE_CREADO+postClient,null));
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.CLIENTE_CREADO + postClient, null));
         } catch (RuntimeException e) {
-            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR,e.toString(),null), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, e.toString(), null), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -54,9 +54,9 @@ public class ClienteController {
 
         try {
             Cliente updatedUser = clienteService.updateUser(id, user);
-            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK,Constants.CLIENTE_ACTUALIZADO+updatedUser,null));
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.CLIENTE_ACTUALIZADO + updatedUser, null));
         } catch (RuntimeException e) {
-            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR,e.toString(),null), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, e.toString(), null), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -65,9 +65,9 @@ public class ClienteController {
 
         try {
             clienteService.deleteUser(id);
-            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK,Constants.CLIENTE_ELIMINADO+id,null));
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.CLIENTE_ELIMINADO + id, null));
         } catch (Exception e) {
-            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR,e.toString(),null), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, e.toString(), null), HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
     }

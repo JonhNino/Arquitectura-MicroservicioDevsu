@@ -1,8 +1,10 @@
 package com.devsu.ClientePersonaService.model.reporteFinal;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Data
@@ -14,14 +16,16 @@ public class CuentaReporteFinal {
     @JsonProperty("tipo_cuenta")
     private String tipoCuenta;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     @JsonProperty("saldo_inicial")
-    private Double saldoInicial;
+    private BigDecimal saldoInicial;
 
     @JsonProperty("estado")
     private Boolean estado;
 
     @JsonProperty("saldo_disponible")
-    private Double saldoDisponible;
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    private BigDecimal saldoDisponible;
 
     @JsonProperty("movimientos")
     private List<MovimientoReporteFinal> movimientos;

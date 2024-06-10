@@ -17,7 +17,7 @@ public class RabbitMQConfig {
 
     @Bean
     public Queue clienteCuentaQueue() {
-        return new Queue("clienteCuentaQueue", true);  // Asegúrate de que sea durable si es necesario
+        return new Queue("clienteCuentaQueue", true);
     }
 
     @Bean

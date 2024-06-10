@@ -1,6 +1,5 @@
 package com.Devsu.CuentaMovimientosService.service;
 
-import com.Devsu.CuentaMovimientosService.CuentaMovimientosServiceApplication;
 import com.Devsu.CuentaMovimientosService.model.Cuenta;
 import com.Devsu.CuentaMovimientosService.model.reporte.CuentaReporte;
 import com.Devsu.CuentaMovimientosService.model.reporte.MovimientoReporte;
@@ -52,6 +51,7 @@ public class CuentaService {
             throw new RuntimeException("User not found with id " + id);
         }
     }
+
     public void deleteUser(Long id) {
         cuentaRepository.deleteById(id);
     }

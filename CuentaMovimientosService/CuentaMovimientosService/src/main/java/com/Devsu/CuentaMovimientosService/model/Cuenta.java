@@ -1,10 +1,10 @@
 package com.Devsu.CuentaMovimientosService.model;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity

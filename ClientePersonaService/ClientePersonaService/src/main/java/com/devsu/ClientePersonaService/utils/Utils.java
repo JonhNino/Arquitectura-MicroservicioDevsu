@@ -1,11 +1,11 @@
 package com.devsu.ClientePersonaService.utils;
 
-import com.devsu.ClientePersonaService.ClientePersonaServiceApplication;
 import com.devsu.ClientePersonaService.model.ErrorResponse;
 import com.devsu.ClientePersonaService.model.clientFechas.ClientFechas;
+import com.devsu.ClientePersonaService.model.reporte.Reporte;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import org.slf4j.LoggerFactory;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -31,21 +31,26 @@ public class Utils {
     public String convertAndSend(ClientFechas clientFechas) {
         try {
             String clientFechasJson = objectMapper.writeValueAsString(clientFechas);
-            log.info("ClientFechas JSON: {}"+ clientFechasJson);
-          //  this.publisher.send(clientFechasJson);
+            log.info("ClientFechas JSON: {}" + clientFechasJson);
             return clientFechasJson;
         } catch (Exception e) {
-            log.warning("Error converting ClientFechas to JSON"+ e);
+            log.warning("Error converting ClientFechas to JSON" + e);
             return null;
         }
     }
 
-    public String sendClientFechas(Long clienteId, LocalDate date1, LocalDate date2){
+    public String sendClientFechas(Long clienteId, LocalDate date1, LocalDate date2) {
         ClientFechas clientFechas = new ClientFechas();
         clientFechas.setClientId(clienteId);
         clientFechas.setFecha1(date1);
         clientFechas.setFecha2(date2);
         return convertAndSend(clientFechas);
+    }
+
+    public static Reporte parseJsonToReporte(String json) throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.registerModule(new JavaTimeModule());
+        return objectMapper.readValue(json, Reporte.class);
     }
 
 }
