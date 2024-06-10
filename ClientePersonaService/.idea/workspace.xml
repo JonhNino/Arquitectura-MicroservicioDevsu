@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec411312-bd06-45bf-a72e-5325a72af4b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/16d88d76831606ac91d13ef2c5e4749051fe6d83" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/16d88d76831606ac91d13ef2c5e4749051fe6d83" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cuenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Movimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Movimiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/3/c/3ca905c84f4e81c1adda0b041e488d8eb395773e" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/3/c/3ca905c84f4e81c1adda0b041e488d8eb395773e" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +55,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.All in ClientePersonaService.executor": "Coverage",
+    "JUnit.ClienteServiceTest.executor": "Run",
+    "JUnit.ClienteServiceTest.testDeleteUser.executor": "Run",
+    "JUnit.ClienteServiceTest.testSaveUser.executor": "Run",
+    "JUnit.ClienteServiceTest.testUpdateUser.executor": "Run",
+    "JUnit.ClienteServiceTest.testUpdateUser_NotFound.executor": "Run",
     "Maven.ClientePersonaService [clean].executor": "Run",
     "Maven.ClientePersonaService [install].executor": "Run",
     "Maven.cliente.executor": "Run",
@@ -91,7 +102,78 @@
       <recent name="com.devsu.ClientePersonaService.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ClientePersonaServiceApplication">
+  <component name="RunManager" selected="JUnit.All in ClientePersonaService">
+    <configuration name="All in ClientePersonaService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClientePersonaService" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClientePersonaService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devsu.ClientePersonaService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devsu.ClientePersonaService" />
+      <option name="MAIN_CLASS_NAME" value="com.devsu.ClientePersonaService.ClienteServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteServiceTest.testDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClientePersonaService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devsu.ClientePersonaService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devsu.ClientePersonaService" />
+      <option name="MAIN_CLASS_NAME" value="com.devsu.ClientePersonaService.ClienteServiceTest" />
+      <option name="METHOD_NAME" value="testDeleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteServiceTest.testUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClientePersonaService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devsu.ClientePersonaService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devsu.ClientePersonaService" />
+      <option name="MAIN_CLASS_NAME" value="com.devsu.ClientePersonaService.ClienteServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteServiceTest.testUpdateUser_NotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClientePersonaService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devsu.ClientePersonaService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devsu.ClientePersonaService" />
+      <option name="MAIN_CLASS_NAME" value="com.devsu.ClientePersonaService.ClienteServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateUser_NotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="cliente" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -130,9 +212,23 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.All in ClientePersonaService" />
+      <item itemvalue="JUnit.ClienteServiceTest" />
+      <item itemvalue="JUnit.ClienteServiceTest.testDeleteUser" />
+      <item itemvalue="JUnit.ClienteServiceTest.testUpdateUser" />
+      <item itemvalue="JUnit.ClienteServiceTest.testUpdateUser_NotFound" />
       <item itemvalue="Maven.cliente" />
       <item itemvalue="Spring Boot.ClientePersonaServiceApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in ClientePersonaService" />
+        <item itemvalue="JUnit.ClienteServiceTest" />
+        <item itemvalue="JUnit.ClienteServiceTest.testUpdateUser" />
+        <item itemvalue="JUnit.ClienteServiceTest.testDeleteUser" />
+        <item itemvalue="JUnit.ClienteServiceTest.testUpdateUser_NotFound" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -152,5 +248,8 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ClientePersonaService$All_in_ClientePersonaService.ic" NAME="All in ClientePersonaService Coverage Results" MODIFIED="1718048121441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

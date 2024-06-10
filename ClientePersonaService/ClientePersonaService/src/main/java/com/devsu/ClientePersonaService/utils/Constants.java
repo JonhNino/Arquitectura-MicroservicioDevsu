@@ -16,7 +16,7 @@ public class Constants {
     public static final String CLIENTE_NO_MOVIMIENTOS = "El Cliente no tiene Movimientos asociadas en estas fechas";
 
     public static final String CLIENTE_CUENTA_QUEUE = "clienteCuentaQueue";
-    public static final String USER_NOT_FOUND ="User not found with id ";
+    public static final String USER_NOT_FOUND ="User not found with id: ";
 
     public static final String CLIENTE_NO_NOMBRE= "El Cliente no tiene Nombre";
     public static final String ERROR_PROCESSING_JSON="Error processing JSON";

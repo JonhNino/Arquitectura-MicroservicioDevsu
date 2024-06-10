@@ -75,3 +75,5 @@ hClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/repor
 ^ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ReportService.java,c\0\c03089cfc72e072f8fd1da36c0b710dbd5fd8c88
 ”
 dClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/ReportConversionUtils.java,2\5\2500c83f41cee278284adc48b8006d5e05c676cc
+‹
+[ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteServiceTest.java,1\d\1d9ce78b987800918262d7ad12ac76e18b9baee5
