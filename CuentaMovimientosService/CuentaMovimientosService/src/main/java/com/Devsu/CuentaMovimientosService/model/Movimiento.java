@@ -1,5 +1,6 @@
 package com.Devsu.CuentaMovimientosService.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -29,5 +30,18 @@ public class Movimiento {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cuenta_id", nullable = false)
+    @JsonIgnoreProperties({"movimientos", "tipoCuenta", "saldoInicial", "estado", "cliente"})  // Ignora propiedades innecesarias
     private Cuenta cuenta;
+
+    @Override
+    public String toString() {
+        return "Movimiento{" +
+                "id=" + id +
+                ", fecha=" + fecha +
+                ", tipoMovimiento='" + tipoMovimiento + '\'' +
+                ", valor=" + valor +
+                ", saldo=" + saldo +
+                ", cuentaId=" + (cuenta != null ? cuenta.getId() : null) +
+                '}';
+    }
 }

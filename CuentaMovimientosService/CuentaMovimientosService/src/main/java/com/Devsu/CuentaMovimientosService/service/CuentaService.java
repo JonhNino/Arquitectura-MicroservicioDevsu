@@ -34,7 +34,12 @@ public class CuentaService {
         return cuentaRepository.findById(id);
     }
 
+    @Transactional
     public Cuenta saveUser(Cuenta user) {
+        // Asociar movimientos con la cuenta antes de guardar
+        if (user.getMovimientos() != null) {
+            user.getMovimientos().forEach(movimiento -> movimiento.setCuenta(user));
+        }
         return cuentaRepository.save(user);
     }
 
