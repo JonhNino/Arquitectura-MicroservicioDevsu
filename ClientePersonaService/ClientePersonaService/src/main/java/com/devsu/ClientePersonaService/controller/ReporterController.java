@@ -38,6 +38,7 @@ public class ReporterController {
         futureResponses.put(clienteId, futureResponse);
 
         String[] fechas = fecha.split(":");
+
         log.info("RequestParam " + fecha + " " + clienteId);
 
         String message = "";
@@ -46,25 +47,25 @@ public class ReporterController {
         } else if (fechas.length == 2) {
             message = utils.sendClientFechas(clienteId, LocalDate.parse(fechas[0]), LocalDate.parse(fechas[1]));
         } else {
-            return ResponseEntity.badRequest().body(utils.buildErrorResponse(Constants.BAD_REQUEST, "Fecha Incorrecta", null));
+            return ResponseEntity.badRequest().body(utils.buildErrorResponse(Constants.BAD_REQUEST, Constants.FECHA_INCORRECTA, null));
         }
 
         reportService.sendReportRequest(message, clienteId, futureResponse);
 
         try {
             String responseMessage = futureResponse.get(2, TimeUnit.SECONDS);
-            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, "Reporte Creado", reportService.processResponse(responseMessage)));
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.REPORTE_CREADO, reportService.processResponse(responseMessage)));
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, "Error interno del servidor", null));
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, Constants.INTERNAL_SERVER_ERROR, null));
         } catch (ExecutionException e) {
             Throwable cause = e.getCause();
             if (cause instanceof EmptyReportException) {
-                return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, "El cliente no tiene cuentas asociadas", null));
+                return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.CLIENTE_NO_CUENTAS, null));
             }
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, "Error interno del servidor", null));
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, Constants.INTERNAL_SERVER_ERROR, null));
         } catch (TimeoutException e) {
-            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, "El Cliente no tiene Movimientos asociadas en estas fechas" + fecha, null));
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, Constants.CLIENTE_NO_MOVIMIENTOS + fecha, null));
         } finally {
             futureResponses.remove(clienteId);
         }

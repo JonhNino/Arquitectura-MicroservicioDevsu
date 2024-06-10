@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.util.logging.Logger;
 
+import static com.Devsu.CuentaMovimientosService.utils.Constants.INICIO_MS;
+
 @SpringBootApplication
 @EnableJpaRepositories(basePackages = "com.Devsu.CuentaMovimientosService.repository")
 @EntityScan(basePackages = "com.Devsu.CuentaMovimientosService.model")
@@ -15,7 +17,7 @@ public class CuentaMovimientosServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CuentaMovimientosServiceApplication.class, args);
-        LOGGER.info("**********El Microservicio CuentaMovimientosServiceApplication se ha iniciado correctamente.**********");
+        LOGGER.info(INICIO_MS);
     }
 
 }

@@ -21,6 +21,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
+import com.devsu.ClientePersonaService.utils.Constants;
 
 @Service
 @Slf4j
@@ -50,11 +51,11 @@ public class ReportService {
             LocalDate fechaReporte = LocalDate.now();
 
             Optional<Cliente> cuenta = clienteService.findUserById(reporte.getCuentas().get(0).getClienteId());
-            String name = cuenta.map(c -> c.getPersona().getNombre()).orElse("El Cliente no tiene Nombre");
+            String name = cuenta.map(c -> c.getPersona().getNombre()).orElse(Constants.CLIENTE_NO_NOMBRE);
 
             return ReportConversionUtils.convertToReporteFinal(reporte, cantCuentas, fechaReporte, name);
         } catch (JsonProcessingException e) {
-            log.error("Error processing JSON", e);
+            log.error(Constants.ERROR_PROCESSING_JSON, e);
             return null;
         }
     }
@@ -66,11 +67,11 @@ public class ReportService {
 
     @RabbitListener(queues = {"${movimientoCliente.queue.name}"})
     public void receiveMovimientoCliente(@Payload String message) {
-        log.info("Received message from movimientoCliente {}", message);
+        log.info(Constants.RECEIVEND_MESSAGE, message);
         Long clienteId = null;
         try {
             if (message == null || message.trim().isEmpty() || message.equals("{\"cuentas\":[]}")) {
-                log.info("Empty message received");
+                log.info(Constants.EMPTY_MESSAGE);
                 handleEmptyMessage(message);
                 return;
             }
@@ -82,7 +83,7 @@ public class ReportService {
                 futureResponse.complete(message);
             }
         } catch (Exception e) {
-            log.error("Error deserializing JSON from movimientoCliente", e);
+            log.error(Constants.ERROR_DESERIALIZING_MOVIMIENTCLIENTE, e);
             if (clienteId != null) {
                 CompletableFuture<String> futureResponse = futureResponses.get(clienteId);
                 if (futureResponse != null) {
@@ -96,13 +97,13 @@ public class ReportService {
         try {
             Reporte reporte = objectMapper.readValue(message, Reporte.class);
             if (reporte.getCuentas().isEmpty()) {
-                throw new EmptyReportException("No accounts found for client");
+                throw new EmptyReportException(Constants.NO_ACCOUNTS_FOR_CLIENT);
             }
             return reporte.getCuentas().get(0).getClienteId();
         } catch (EmptyReportException e) {
             throw e;
         } catch (Exception e) {
-            log.error("Error deserializing JSON to extract clienteId", e);
+            log.error(Constants.ERROR_DESERIALIZING_CLIENTID, e);
             return null;
         }
     }

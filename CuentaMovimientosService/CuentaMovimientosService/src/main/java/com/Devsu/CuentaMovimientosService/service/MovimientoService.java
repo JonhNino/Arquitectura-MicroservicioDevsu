@@ -9,6 +9,8 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Optional;
 
+import static com.Devsu.CuentaMovimientosService.utils.Constants.USER_NOT_FOUND;
+
 @Service
 public class MovimientoService {
 
@@ -39,7 +41,7 @@ public class MovimientoService {
             existingUser.setCuenta(updatedUser.getCuenta());
             return movimientoRepository.save(existingUser);
         } else {
-            throw new RuntimeException("User not found with id " + id);
+            throw new RuntimeException(USER_NOT_FOUND+ id);
         }
     }
 

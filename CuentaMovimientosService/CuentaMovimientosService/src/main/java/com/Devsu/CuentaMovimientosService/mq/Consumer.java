@@ -9,8 +9,11 @@ import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
+
+import static com.Devsu.CuentaMovimientosService.utils.Constants.*;
 
 @Slf4j
 @Component
@@ -25,24 +28,29 @@ public class Consumer {
 
     @Autowired
     private Queue movimientoClienteQueue;
+    @Value("${clienteCuenta.queue.name}")
+    private String clienteCuentaQueueName;
+
+    @Value("${movimientoCliente.queue.name}")
+    private String movimientoClienteQueueName;
 
     public Consumer(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
     }
 
-    @RabbitListener(queues = {"${clienteCuenta.queue.name}"})
-    public void receive(@Payload String message) {
+    @RabbitListener(queues = CLIENTE_CUENTA_QUEUE_NAME)
+    public void receive(String message) {
         log.info("Received message {}", message);
         try {
             ClientFechas receivedCliente = objectMapper.readValue(message, ClientFechas.class);
             if (receivedCliente.getFecha1() == null || receivedCliente.getFecha2() == null) {
-                log.error("Received message with null dates: {}", message);
+                log.error(NULL_DATE_MESSAGE, message);
                 return;
             }
 
-            rabbitTemplate.convertAndSend(movimientoClienteQueue.getName(), utils.convertAndSend(cuentaService.getCuentasConMovimientos(receivedCliente.getClientId(), receivedCliente.getFecha1().toString(), receivedCliente.getFecha2().toString(), receivedCliente.getFecha1().toString())));
+            rabbitTemplate.convertAndSend(movimientoClienteQueueName, utils.convertAndSend(cuentaService.getCuentasConMovimientos(receivedCliente.getClientId(), receivedCliente.getFecha1().toString(), receivedCliente.getFecha2().toString(), receivedCliente.getFecha1().toString())));
         } catch (Exception e) {
-            log.error("Error deserializing JSON to Cliente", e);
+            log.error(JSON_DESERIALIZE_ERROR_MESSAGE, e);
         }
     }
 

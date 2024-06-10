@@ -1,22 +1,23 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(– Òãıÿÿÿÿ8ı¡°şÿ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(– Òãıÿÿÿÿ8è°´€€2
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Û¶Øÿÿ1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8é°´€€2
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Û¶Øÿÿ1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8é°´€€2
 T
-java:S6863?"2Set a HttpStatus code reflective of the operation.(ìõ±ƒıÿÿÿÿ8Ü¶Øÿÿ1
-O
-java:S6863C"2Set a HttpStatus code reflective of the operation.(Ï¡Ÿ8Ü¶Øÿÿ1
+java:S6863@"2Set a HttpStatus code reflective of the operation.(„Æ„¶úÿÿÿÿ8ê°´€€2
+T
+java:S6863D"2Set a HttpStatus code reflective of the operation.(óÙú÷ıÿÿÿÿ8ê°´€€2
 W
-java:S22091"5Change this instance-reference to a static reference.(œÆÔáüÿÿÿÿ8å¶Øÿÿ1
+java:S22092"5Change this instance-reference to a static reference.(ùõƒÚıÿÿÿÿ8ñ°´€€2
+Q
+java:S22099"5Change this instance-reference to a static reference.(ÓëÒ
+8ò°´€€2
 R
-java:S22098"5Change this instance-reference to a static reference.(øÍ›â8æ¶Øÿÿ1
-R
-java:S2209;"5Change this instance-reference to a static reference.(„±Öı8æ¶Øÿÿ1
+java:S2209<"5Change this instance-reference to a static reference.(ÙÃÍÿ8ò°´€€2
 W
-java:S2209?"5Change this instance-reference to a static reference.(ìõ±ƒıÿÿÿÿ8ç¶Øÿÿ1
+java:S2209@"5Change this instance-reference to a static reference.(„Æ„¶úÿÿÿÿ8ò°´€€2
 R
-java:S2209A"5Change this instance-reference to a static reference.(„±Öı8ç¶Øÿÿ1
-R
-java:S2209C"5Change this instance-reference to a static reference.(Ï¡Ÿ8ç¶Øÿÿ1
+java:S2209B"5Change this instance-reference to a static reference.(ÙÃÍÿ8ò°´€€2
+W
+java:S2209D"5Change this instance-reference to a static reference.(óÙú÷ıÿÿÿÿ8ó°´€€2

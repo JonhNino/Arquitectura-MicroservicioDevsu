@@ -11,6 +11,9 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDate;
 import java.util.logging.Logger;
 
+import static com.devsu.ClientePersonaService.utils.Constants.CLIENTE_FECHAS_JSON;
+import static com.devsu.ClientePersonaService.utils.Constants.ERROR_CONVERTING_CLIENTFECHAS;
+
 @Component
 public class Utils {
     private static final Logger log = Logger.getLogger(Utils.class.getName());
@@ -31,10 +34,10 @@ public class Utils {
     public String convertAndSend(ClientFechas clientFechas) {
         try {
             String clientFechasJson = objectMapper.writeValueAsString(clientFechas);
-            log.info("ClientFechas JSON: {}" + clientFechasJson);
+            log.info(CLIENTE_FECHAS_JSON + clientFechasJson);
             return clientFechasJson;
         } catch (Exception e) {
-            log.warning("Error converting ClientFechas to JSON" + e);
+            log.warning(ERROR_CONVERTING_CLIENTFECHAS + e);
             return null;
         }
     }

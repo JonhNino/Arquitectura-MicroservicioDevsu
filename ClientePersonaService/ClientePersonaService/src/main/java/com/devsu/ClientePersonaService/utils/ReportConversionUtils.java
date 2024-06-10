@@ -12,6 +12,9 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static com.devsu.ClientePersonaService.utils.Constants.DEPOSITO;
+import static com.devsu.ClientePersonaService.utils.Constants.RETIRO;
+
 public class ReportConversionUtils {
     public static ReporteFinal convertToReporteFinal(Reporte reporte, int cantCuentas, LocalDate fechaReporte, String name) {
         ReporteFinal reporteFinal = new ReporteFinal();
@@ -49,11 +52,11 @@ public class ReportConversionUtils {
 
     private static BigDecimal calculateSaldoDisponible(List<MovimientoReporteFinal> movimientos) {
         BigDecimal totalDepositos = movimientos.stream()
-                .filter(mov -> "Depósito".equalsIgnoreCase(mov.getTipoMovimiento()))
+                .filter(mov -> DEPOSITO.equalsIgnoreCase(mov.getTipoMovimiento()))
                 .map(MovimientoReporteFinal::getValor)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
         BigDecimal totalRetiros = movimientos.stream()
-                .filter(mov -> "Retiro".equalsIgnoreCase(mov.getTipoMovimiento()))
+                .filter(mov -> RETIRO.equalsIgnoreCase(mov.getTipoMovimiento()))
                 .map(MovimientoReporteFinal::getValor)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
         return totalDepositos.subtract(totalRetiros);

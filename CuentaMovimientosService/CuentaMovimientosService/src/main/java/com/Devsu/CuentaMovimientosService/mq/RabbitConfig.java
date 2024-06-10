@@ -9,6 +9,9 @@ import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import static com.Devsu.CuentaMovimientosService.utils.Constants.CLIENTE_CUENTA_QUEUE_NAME;
+import static com.Devsu.CuentaMovimientosService.utils.Constants.MOVIMIENTO_CLIENTE_QUEUE_NAME;
+
 @Configuration
 public class RabbitConfig {
     @Bean
@@ -18,12 +21,12 @@ public class RabbitConfig {
 
     @Bean
     public Queue clienteCuentaQueue() {
-        return new Queue("clienteCuenta", true);  // Asegúrate de que sea durable si es necesario
+        return new Queue(CLIENTE_CUENTA_QUEUE_NAME, true);
     }
 
     @Bean
     public Queue movimientoClienteQueue() {
-        return new Queue("movimientoCliente", true);  // Asegúrate de que sea durable si es necesario
+        return new Queue(MOVIMIENTO_CLIENTE_QUEUE_NAME, true);
     }
 
     @Bean

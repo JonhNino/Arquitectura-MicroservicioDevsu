@@ -1,8 +1,8 @@
 
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(È“•Ğùÿÿÿÿ
 W
-java:S1118":Add a private constructor to hide the implicit public one.(€şİé8çÊÿÿ1
+java:S1118":Add a private constructor to hide the implicit public one.(€şİé8çÊÿÿ1
 o
-java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’8çÊÿÿ1
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’8çÊÿÿ1
 o
-java:S6204#"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’8çÊÿÿ1
+java:S6204&"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’8çÊÿÿ1

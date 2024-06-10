@@ -5,6 +5,7 @@ import com.devsu.ClientePersonaService.model.Cliente;
 import com.devsu.ClientePersonaService.model.Persona;
 import com.devsu.ClientePersonaService.repository.ClienteRepository;
 import com.devsu.ClientePersonaService.repository.PersonaRepository;
+import com.devsu.ClientePersonaService.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -60,10 +61,9 @@ public class ClienteService {
             existingUser.setEstado(updatedUser.isEstado());
             return clienteRepository.save(existingUser);
         } else {
-            throw new RuntimeException("User not found with id " + id);
+            throw new RuntimeException(Constants.USER_NOT_FOUND + id);
         }
     }
-
 
     public void deleteUser(Long id) {
         clienteRepository.deleteById(id);

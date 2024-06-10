@@ -1,6 +1,7 @@
 package com.Devsu.CuentaMovimientosService.service;
 
 import com.Devsu.CuentaMovimientosService.model.Cuenta;
+import com.Devsu.CuentaMovimientosService.utils.Constants;
 import com.Devsu.CuentaMovimientosService.model.reporte.CuentaReporte;
 import com.Devsu.CuentaMovimientosService.model.reporte.MovimientoReporte;
 import com.Devsu.CuentaMovimientosService.model.reporte.Reporte;
@@ -56,8 +57,6 @@ public class CuentaService {
         cuentaRepository.deleteById(id);
     }
 
-
-    ///Query Reporte
     public Reporte getCuentasConMovimientos(Long clienteId, String fechaInicio, String fechaFin, String fechaUnica) {
         String sql = "SELECT c.numero_cuenta, c.tipo_cuenta, c.saldo_inicial, c.estado, " +
                 "m.id AS movimiento_id, m.fecha, m.tipo_movimiento, m.valor, m.saldo " +
@@ -69,25 +68,25 @@ public class CuentaService {
         Map<Long, CuentaReporte> cuentaMap = new HashMap<>();
 
         for (Map<String, Object> row : rows) {
-            Long numeroCuenta = (Long) row.get("numero_cuenta");
+            Long numeroCuenta = (Long) row.get(Constants.NUMERO_CUENTA);
 
             if (!cuentaMap.containsKey(numeroCuenta)) {
                 CuentaReporte cuentaReporte = new CuentaReporte();
                 cuentaReporte.setNumeroCuenta(numeroCuenta);
-                cuentaReporte.setTipoCuenta((String) row.get("tipo_cuenta"));
-                cuentaReporte.setSaldoInicial((Double) row.get("saldo_inicial"));
-                cuentaReporte.setEstado((Boolean) row.get("estado"));
+                cuentaReporte.setTipoCuenta((String) row.get(Constants.TIPO_CUENTA));
+                cuentaReporte.setSaldoInicial((Double) row.get(Constants.SALDO_INICIAL));
+                cuentaReporte.setEstado((Boolean) row.get(Constants.ESTADO));
                 cuentaReporte.setClienteId(clienteId);
                 cuentaReporte.setMovimientos(new ArrayList<>());
                 cuentaMap.put(numeroCuenta, cuentaReporte);
             }
 
             MovimientoReporte movimientoReporte = new MovimientoReporte();
-            movimientoReporte.setId((Long) row.get("movimiento_id"));
-            movimientoReporte.setFecha(((java.sql.Date) row.get("fecha")).toLocalDate());
-            movimientoReporte.setTipoMovimiento((String) row.get("tipo_movimiento"));
-            movimientoReporte.setValor((Double) row.get("valor"));
-            movimientoReporte.setSaldo((Double) row.get("saldo"));
+            movimientoReporte.setId((Long) row.get(Constants.MOVIMIENTO_ID));
+            movimientoReporte.setFecha(((java.sql.Date) row.get(Constants.FECHA)).toLocalDate());
+            movimientoReporte.setTipoMovimiento((String) row.get(Constants.TIPO_MOVIMIENTO));
+            movimientoReporte.setValor((Double) row.get(Constants.VALOR));
+            movimientoReporte.setSaldo((Double) row.get(Constants.SALDO));
 
             cuentaMap.get(numeroCuenta).getMovimientos().add(movimientoReporte);
         }

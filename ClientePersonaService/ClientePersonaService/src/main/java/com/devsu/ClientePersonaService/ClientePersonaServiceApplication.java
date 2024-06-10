@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.util.logging.Logger;
 
+import static com.devsu.ClientePersonaService.utils.Constants.INICIO_MS;
+
 @SpringBootApplication
 @EntityScan(basePackages = "com.devsu.ClientePersonaService.model")
 @EnableJpaRepositories(basePackages = "com.devsu.ClientePersonaService.repository")
@@ -15,7 +17,7 @@ public class ClientePersonaServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ClientePersonaServiceApplication.class, args);
-        LOGGER.info("**********El Microservicio ClientePersonaServiceApplication se ha iniciado correctamente.**********");
+        LOGGER.info(INICIO_MS);
     }
 
 }
