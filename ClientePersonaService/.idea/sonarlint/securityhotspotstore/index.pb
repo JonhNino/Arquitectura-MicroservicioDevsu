@@ -77,3 +77,9 @@ hClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/repor
 dClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/ReportConversionUtils.java,2\5\2500c83f41cee278284adc48b8006d5e05c676cc
 ã
 [ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteServiceTest.java,1\d\1d9ce78b987800918262d7ad12ac76e18b9baee5
+ô
+iClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteControllerIntegrationTest.java,9\0\90d42e41e2961cace898fb772cf1eb16db6bdc24
+è
+_ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteIntegrationTest.java,3\3\33b77e2f4eab74ff41b5a2263bb2519f992df3d2
+ö
+jClientePersonaService/src/test/java/com/devsu/ClientePersonaService/controller/ClienteIntegrationTest.java,a\5\a57a108c374963353215342df1169be271fb13a4

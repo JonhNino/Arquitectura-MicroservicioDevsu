@@ -76,3 +76,28 @@ INSERT INTO movimientos (fecha, tipo_movimiento, valor, saldo, cuenta_id) VALUES
 DESCRIBE cuenta;
 
 
+-- Querys JOin
+
+SELECT 
+    c.numero_cuenta,
+    c.tipo_cuenta,
+    c.saldo_inicial,
+    c.estado,
+    c.cliente_id,
+    m.id AS movimiento_id,
+    m.fecha,
+    m.tipo_movimiento,
+    m.valor,
+    m.saldo
+FROM 
+    cuenta c
+LEFT JOIN 
+    movimientos m ON c.numero_cuenta = m.cuenta_id
+WHERE 
+    c.cliente_id = 987654321 AND
+    (
+        (m.fecha BETWEEN '2022-01-07' AND'2022-03-07') OR
+        (m.fecha = '2022-02-07')
+    );
+
+

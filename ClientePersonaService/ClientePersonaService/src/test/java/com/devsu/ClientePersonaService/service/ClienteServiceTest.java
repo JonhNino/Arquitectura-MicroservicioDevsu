@@ -1,4 +1,4 @@
-package com.devsu.ClientePersonaService;
+package com.devsu.ClientePersonaService.service;
 
 import com.devsu.ClientePersonaService.model.Cliente;
 import com.devsu.ClientePersonaService.model.Persona;
