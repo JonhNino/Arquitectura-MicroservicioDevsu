@@ -12,14 +12,4 @@ public class MovimientoReporte {
     private Double valor;
     private Double saldo;
 
-    @Override
-    public String toString() {
-        return "MovimientoReporte{" +
-                "id=" + id +
-                ", fecha=" + fecha +
-                ", tipoMovimiento='" + tipoMovimiento + '\'' +
-                ", valor=" + String.format("%.2f", valor) +
-                ", saldo=" + String.format("%.2f", saldo) +
-                '}';
-    }
 }

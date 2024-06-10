@@ -1,0 +1,14 @@
+
+
+java:S1488)"dImmediately return this expression instead of assigning it to the temporary variable "reporteFinal".(›Š„Ž8á…óýÿ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(È“•Ðùÿÿÿÿ8ÑšÙüÿ1
+W
+java:S1118":Add a private constructor to hide the implicit public one.(Ð‚ó¹8û¡Œýÿ1
+o
+java:S6204>"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’8Îñìýÿ1
+o
+java:S6204P"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’8Ðñìýÿ1
+b
+java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8ÎþŽþÿ1
+f
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8ÎþŽþÿ1

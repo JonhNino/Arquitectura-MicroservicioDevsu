@@ -17,15 +17,5 @@ public class CuentaReporte {
     private Long clienteId;
     private List<MovimientoReporte> movimientos;
 
-    @Override
-    public String toString() {
-        return "CuentaReporte{" +
-                "clienteId=" + clienteId +
-                "numeroCuenta=" + numeroCuenta +
-                ", tipoCuenta='" + tipoCuenta + '\'' +
-                ", saldoInicial=" + String.format("%.2f", saldoInicial) +
-                ", estado=" + estado +
-                ", movimientos=" + movimientos +
-                '}';
-    }
+
 }

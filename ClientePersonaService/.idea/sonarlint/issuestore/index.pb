@@ -57,3 +57,17 @@ dClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/repor
 hClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/MovimientoReporte.java,1\3\138cf93aa9da04d24f86b09c9e842aa2172fb038
 ó
 gClientePersonaService/src/main/java/com/devsu/ClientePersonaService/exception/EmptyReportException.java,6\c\6c9f4cb772ecb909558b3a78834845affd261d5e
+â
+YClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/UtilReport.java,0\0\0066ce2803089240cc094921e49d865a6ad5a4bf
+ù
+mClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/MovimientoReporte.java,6\b\6b9714184fdb75acc3b48a091d136e293c281e91
+ì
+cClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/Reporte.java,9\0\909eb30a95ed686b1d260763db0443ad6c63c815
+ô
+iClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/CuentaReporte.java,1\7\170f5f9c0475e5e65ec784c66366026131689e8a
+¢
+rClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/MovimientoReporteFinal.java,7\e\7eaa9a18ea1be4b24c890c2c783dea09c0ffb7ba
+û
+nClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/CuentaReporteFinal.java,9\a\9a490968d196c71f1dfa710575ebe084d2afd0f6
+ò
+hClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/ReporteFinal.java,2\8\28bac4108f7858fa6650e808cd0d80540c85e259

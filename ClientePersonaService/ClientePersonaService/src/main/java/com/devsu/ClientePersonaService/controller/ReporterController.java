@@ -2,9 +2,9 @@ package com.devsu.ClientePersonaService.controller;
 
 import com.devsu.ClientePersonaService.exception.EmptyReportException;
 import com.devsu.ClientePersonaService.model.ErrorResponse;
-import com.devsu.ClientePersonaService.model.clientFechas.ClientFechas;
 import com.devsu.ClientePersonaService.model.reporte.Reporte;
 import com.devsu.ClientePersonaService.utils.Constants;
+import com.devsu.ClientePersonaService.utils.UtilReport;
 import com.devsu.ClientePersonaService.utils.Utils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -59,34 +59,36 @@ public class ReporterController {
 
         String message = "";
         if (fechas.length == 1) {
-            message = sendClientFechas(clienteId, LocalDate.parse(fechas[0]), LocalDate.parse(fechas[0]));
+            message = utils.sendClientFechas(clienteId, LocalDate.parse(fechas[0]), LocalDate.parse(fechas[0]));
         } else if (fechas.length == 2) {
-            message = sendClientFechas(clienteId, LocalDate.parse(fechas[0]), LocalDate.parse(fechas[1]));
+            message = utils.sendClientFechas(clienteId, LocalDate.parse(fechas[0]), LocalDate.parse(fechas[1]));
         } else {
-            return ResponseEntity.badRequest().body(utils.buildErrorResponse(Constants.BAD_REQUEST, "Fecha Incorrecta"));
+            return ResponseEntity.badRequest().body(utils.buildErrorResponse(Constants.BAD_REQUEST, "Fecha Incorrecta",null));
         }
 
         rabbitTemplate.convertAndSend(clienteCuentaQueue.getName(), message);
 
         try {
-            String responseMessage = futureResponse.get(2, TimeUnit.SECONDS); // Obtener el mensaje recibido con un tiempo de espera de 5 segundos
-            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, responseMessage));
+            String responseMessage = futureResponse.get(2, TimeUnit.SECONDS);
+            // Creacion del Reporte
+            UtilReport.processResponse(responseMessage);
+
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, "Reporte Creado",UtilReport.processResponse(responseMessage)));
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, "Error interno del servidor"));
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, "Error interno del servidor",null));
         } catch (ExecutionException e) {
             Throwable cause = e.getCause();
             if (cause instanceof EmptyReportException) {
-                return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, "El cliente no tiene cuentas asociadas"));
+                return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, "El cliente no tiene cuentas asociadas",null));
             }
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, "Error interno del servidor"));
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(utils.buildErrorResponse(Constants.INTERNAL_SERVER_ERROR, "Error interno del servidor",null));
         } catch (TimeoutException e) {
-            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, "El Cliente no tiene Movimientos asociadas en estas fechas"+fecha));
+            return ResponseEntity.ok(utils.buildErrorResponse(Constants.OK, "El Cliente no tiene Movimientos asociadas en estas fechas"+fecha,null));
         } finally {
             futureResponses.remove(clienteId);
         }
     }
-
 
     @RabbitListener(queues = { "${movimientoCliente.queue.name}" })
     public void receiveMovimientoCliente(@Payload String message) {
@@ -104,13 +106,7 @@ public class ReporterController {
             CompletableFuture<String> futureResponse = futureResponses.get(clienteId);
             if (futureResponse != null) {
                 futureResponse.complete(message);
-            }
-        } catch (EmptyReportException e) {
-            log.info("Empty report for client: " + e.getMessage());
-            clienteId = extractClienteIdFromMessageFromEmptyReport(message);
-            CompletableFuture<String> futureResponse = futureResponses.get(clienteId);
-            if (futureResponse != null) {
-                futureResponse.complete("{\"type\": \"OK\", \"body\": \"El Cliente no tiene movimientos en estas fechas\"}");
+
             }
         } catch (Exception e) {
             log.error("Error deserializing JSON from movimientoCliente", e);
@@ -123,13 +119,6 @@ public class ReporterController {
         }
     }
 
-    public String sendClientFechas(Long clienteId, LocalDate date1, LocalDate date2){
-        ClientFechas clientFechas = new ClientFechas();
-        clientFechas.setClientId(clienteId);
-        clientFechas.setFecha1(date1);
-        clientFechas.setFecha2(date2);
-        return utils.convertAndSend(clientFechas);
-    }
 
     private Long extractClienteIdFromMessage(String message) {
         try {

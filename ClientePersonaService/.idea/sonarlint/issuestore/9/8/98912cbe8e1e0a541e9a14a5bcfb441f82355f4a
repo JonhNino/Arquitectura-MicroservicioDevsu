@@ -5,3 +5,15 @@ java:S6813"BRemove this field injection and use constructor injection instead.
 _
 java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8î‚°Øÿ1
 X	java:S125"<This block of commented-out lines of code should be removed.(ìÕŠ†8ÊºËØÿ1
+W
+java:S2209."5Change this instance-reference to a static reference.(Ù¨àëÿÿÿÿÿ8óµ±ýÿ1
+W
+java:S22090"5Change this instance-reference to a static reference.(Ó©ãýÿÿÿÿ8öµ±ýÿ1
+R
+java:S22099"5Change this instance-reference to a static reference.(‘â›à8øµ±ýÿ1
+W
+java:S2209;"5Change this instance-reference to a static reference.(Ó©ãýÿÿÿÿ8úµ±ýÿ1
+W
+java:S2209D"5Change this instance-reference to a static reference.(àÕìªýÿÿÿÿ8üµ±ýÿ1
+W
+java:S2209F"5Change this instance-reference to a static reference.(Ó©ãýÿÿÿÿ8ýµ±ýÿ1
