@@ -5,15 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec411312-bd06-45bf-a72e-5325a72af4b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientePersonaService/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/0066ce2803089240cc094921e49d865a6ad5a4bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07f489a401879226f4e040239b668d107f52385f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/170f5f9c0475e5e65ec784c66366026131689e8a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d9ce78b987800918262d7ad12ac76e18b9baee5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1faa2daa287e4e4e1e53c8da273cd2dd3dc192f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e22200a17a82fba41a5d5e0ffd33e5e9fd5c697" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33b77e2f4eab74ff41b5a2263bb2519f992df3d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/490af1de1bd5f8af8ddae4fe963c873d1996568f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/588d5cd8ce004e3c27383704b100c24afad9e643" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5e33a22f83d5c3f601e1cf38b59cd7b756451b3f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/615094389921b1b1b610e9b665f7475d850c512f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/66e68227f75bf6d8547368d2f835388b5b86a137" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b9714184fdb75acc3b48a091d136e293c281e91" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/909eb30a95ed686b1d260763db0443ad6c63c815" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/90d42e41e2961cace898fb772cf1eb16db6bdc24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e857f0a15ac96f28718cccaf81b95417d24b0804" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/0/0066ce2803089240cc094921e49d865a6ad5a4bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/7/07f489a401879226f4e040239b668d107f52385f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/7/170f5f9c0475e5e65ec784c66366026131689e8a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/d/1d9ce78b987800918262d7ad12ac76e18b9baee5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/f/1faa2daa287e4e4e1e53c8da273cd2dd3dc192f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2e22200a17a82fba41a5d5e0ffd33e5e9fd5c697" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/3/33b77e2f4eab74ff41b5a2263bb2519f992df3d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/9/490af1de1bd5f8af8ddae4fe963c873d1996568f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/8/588d5cd8ce004e3c27383704b100c24afad9e643" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/e/5e33a22f83d5c3f601e1cf38b59cd7b756451b3f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/1/615094389921b1b1b610e9b665f7475d850c512f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/6/66e68227f75bf6d8547368d2f835388b5b86a137" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/b/6b9714184fdb75acc3b48a091d136e293c281e91" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/0/909eb30a95ed686b1d260763db0443ad6c63c815" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/0/90d42e41e2961cace898fb772cf1eb16db6bdc24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/8/e857f0a15ac96f28718cccaf81b95417d24b0804" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/controller/ClienteIntegrationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/service/ClienteServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientePersonaService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ClientePersonaService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/5/8/587166d9ce3046b99f6d1d7f080e8b752fe3f565" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/b/5/b55f04428c74b75ff5fcbd0ac70dccc019232625" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/f/c/fc51e431abccded51ed17b79f906ca5976add898" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/securityhotspotstore/5/8/587166d9ce3046b99f6d1d7f080e8b752fe3f565" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/securityhotspotstore/b/5/b55f04428c74b75ff5fcbd0ac70dccc019232625" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/securityhotspotstore/f/c/fc51e431abccded51ed17b79f906ca5976add898" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../CuentaMovimientosService/CuentaMovimientosService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,46 +90,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.All in ClientePersonaService (1).executor": "Coverage",
-    "JUnit.All in ClientePersonaService.executor": "Coverage",
-    "JUnit.ClienteControllerIntegrationTest.executor": "Run",
-    "JUnit.ClienteIntegrationTest.shouldCreateClient.executor": "Run",
-    "JUnit.ClienteIntegrationTest.shouldGetAllClients.executor": "Run",
-    "JUnit.ClienteServiceTest.executor": "Run",
-    "JUnit.ClienteServiceTest.testDeleteUser.executor": "Run",
-    "JUnit.ClienteServiceTest.testSaveUser.executor": "Run",
-    "JUnit.ClienteServiceTest.testUpdateUser.executor": "Run",
-    "JUnit.ClienteServiceTest.testUpdateUser_NotFound.executor": "Run",
-    "Maven.ClientePersonaService [clean].executor": "Run",
-    "Maven.ClientePersonaService [install].executor": "Run",
-    "Maven.ClientePersonaService [package].executor": "Run",
-    "Maven.cliente.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ClientePersonaServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jonhn/OneDrive/Escritorio/Devsu/ClientePersonaService/ClientePersonaService/src/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.All in ClientePersonaService (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in ClientePersonaService.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ClienteControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteIntegrationTest.shouldCreateClient.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteIntegrationTest.shouldGetAllClients.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteServiceTest.testDeleteUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteServiceTest.testSaveUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteServiceTest.testUpdateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteServiceTest.testUpdateUser_NotFound.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ClientePersonaService [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ClientePersonaService [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ClientePersonaService [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cliente.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ClientePersonaServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jonhn/OneDrive/Escritorio/Devsu/ClientePersonaService/ClientePersonaService/src/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -113,7 +149,7 @@
       <recent name="com.devsu.ClientePersonaService.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClienteIntegrationTest.shouldCreateClient">
+  <component name="RunManager" selected="Spring Boot.ClientePersonaServiceApplication">
     <configuration name="All in ClientePersonaService (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClientePersonaService" />
       <option name="PACKAGE_NAME" value="" />
@@ -253,6 +289,7 @@
       <workItem from="1717863551928" duration="600000" />
       <workItem from="1717867522326" duration="4021000" />
       <workItem from="1717888128441" duration="31779000" />
+      <workItem from="1718066015948" duration="1263000" />
     </task>
     <servers />
   </component>

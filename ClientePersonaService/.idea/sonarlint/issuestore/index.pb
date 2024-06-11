@@ -1,12 +1,6 @@
 
 M
 ClientePersonaService/pom.xml,6\9\698342dbb7c096de1a8f21de3c20a49abc6b5e13
-ã
-[ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyService.java,4\9\490af1de1bd5f8af8ddae4fe963c873d1996568f
-É
-SClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/Data.java,0\7\07f489a401879226f4e040239b668d107f52385f
-Ö
-UClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/Publisher.java,2\e\2e22200a17a82fba41a5d5e0ffd33e5e9fd5c697
 Ü
 VClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/Cliente.java,1\8\18bc8f8b6c25d849e75a280ec3160317b63eecfb
 ô
@@ -27,10 +21,6 @@ eClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/
 _ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ClienteService.java,9\c\9c241c478426474634cef2274d7a6049921511fb
 å
 \ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/ErrorResponse.java,8\3\834ca9e9929f1f8aee667e2caf53edb08d8a2bdf
-í
-bClientePersonaService/src/main/java/com/devsu/ClientePersonaService/exception/CustomException.java,6\1\615094389921b1b1b610e9b665f7475d850c512f
-å
-\ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/contantes/Constants.java,6\6\66e68227f75bf6d8547368d2f835388b5b86a137
 à
 XClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Constants.java,4\e\4e645df1b8fe3dfb8f338ab1d3f00c7f7a0e3209
 Ñ
@@ -39,14 +29,6 @@ TClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/Utils
 fClientePersonaService/src/main/java/com/devsu/ClientePersonaService/controller/ReporterController.java,2\9\29c4c86a942492fd04dbdde45ab3a06b1c0d8cb5
 ò
 hClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/clientFechas/ClientFechas.java,6\2\626264676cee53fd55f9628a57bfa2a9c7489d8c
-ã
-[ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/PublisherConfig.java,5\e\5e33a22f83d5c3f601e1cf38b59cd7b756451b3f
-á
-WClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/QueueConfig.java,1\f\1faa2daa287e4e4e1e53c8da273cd2dd3dc192f9
-à
-XClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitConfig.java,5\8\588d5cd8ce004e3c27383704b100c24afad9e643
-é
-^ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/dummy/DummyController.java,e\8\e857f0a15ac96f28718cccaf81b95417d24b0804
 ä
 ZClientePersonaService/src/main/java/com/devsu/ClientePersonaService/mq/RabbitMQConfig.java,5\d\5d43508338fe8c9d817063e3d7278d87b648c3ad
 é
@@ -57,14 +39,6 @@ dClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/repor
 hClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporte/MovimientoReporte.java,1\3\138cf93aa9da04d24f86b09c9e842aa2172fb038
 ó
 gClientePersonaService/src/main/java/com/devsu/ClientePersonaService/exception/EmptyReportException.java,6\c\6c9f4cb772ecb909558b3a78834845affd261d5e
-â
-YClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/UtilReport.java,0\0\0066ce2803089240cc094921e49d865a6ad5a4bf
-ù
-mClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/MovimientoReporte.java,6\b\6b9714184fdb75acc3b48a091d136e293c281e91
-ì
-cClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/Reporte.java,9\0\909eb30a95ed686b1d260763db0443ad6c63c815
-ô
-iClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/CuentaReporte.java,1\7\170f5f9c0475e5e65ec784c66366026131689e8a
 ¢
 rClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/reporteFinal/MovimientoReporteFinal.java,7\e\7eaa9a18ea1be4b24c890c2c783dea09c0ffb7ba
 û
@@ -75,12 +49,6 @@ hClientePersonaService/src/main/java/com/devsu/ClientePersonaService/model/repor
 ^ClientePersonaService/src/main/java/com/devsu/ClientePersonaService/service/ReportService.java,c\0\c03089cfc72e072f8fd1da36c0b710dbd5fd8c88
 î
 dClientePersonaService/src/main/java/com/devsu/ClientePersonaService/utils/ReportConversionUtils.java,2\5\2500c83f41cee278284adc48b8006d5e05c676cc
-ã
-[ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteServiceTest.java,1\d\1d9ce78b987800918262d7ad12ac76e18b9baee5
-ô
-iClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteControllerIntegrationTest.java,9\0\90d42e41e2961cace898fb772cf1eb16db6bdc24
-è
-_ClientePersonaService/src/test/java/com/devsu/ClientePersonaService/ClienteIntegrationTest.java,3\3\33b77e2f4eab74ff41b5a2263bb2519f992df3d2
 ö
 jClientePersonaService/src/test/java/com/devsu/ClientePersonaService/controller/ClienteIntegrationTest.java,a\5\a57a108c374963353215342df1169be271fb13a4
 P

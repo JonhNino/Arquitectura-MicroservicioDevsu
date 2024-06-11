@@ -13,8 +13,6 @@ ZCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/Co
 \CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Cliente.java,8\5\853a52dd550c4df7acfa8cde040efe21b724b8dc
 Œ
 \CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Persona.java,8\9\89e86b561c3d63a7e7b7221a4a8e74fd83a478b4
-‰
-YCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/dummy/Data.java,b\5\b55f04428c74b75ff5fcbd0ac70dccc019232625
 Ž
 ^CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/RabbitConfig.java,d\e\de3351f5b20822b65c72519f5f64f02966409f5c
 š
@@ -35,8 +33,6 @@ bCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model
 ^CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Constants.java,c\5\c57a3380899026417bd4895e4b54bde009c33806
 Š
 ZCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/utils/Utils.java,3\3\33ae24555ffd20a30650794a02fe72dca74cb64c
-Œ
-\CuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/Reporte.java,5\8\587166d9ce3046b99f6d1d7f080e8b752fe3f565
 ”
 dCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/Reporte.java,d\8\d8acb6b100adb41ba54e79a54414d5a6cfc44a52
 š
@@ -45,7 +41,5 @@ jCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model
 nCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/reporte/MovimientoReporte.java,5\5\55185e74693ce2ec7bc5e75ab7fd98144c1e81c1
 ž
 nCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/model/clientFechas/ClientFechas.java,7\2\72472ca33c4349ab0b37429f060a042ab653e834
-‘
-aCuentaMovimientosService/src/main/java/com/Devsu/CuentaMovimientosService/mq/PublisherConfig.java,f\c\fc51e431abccded51ed17b79f906ca5976add898
 S
 #CuentaMovimientosService/Dockerfile,d\d\dd011ef6ded56e65d8d8e01ae706d5deeaa51f16
